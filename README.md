@@ -14,11 +14,13 @@ For context: my predicted grade is 41/42.
 
 **usage**:
 
-1. root directory is a list of my selected courses
+1. download: click on `Code` button and click on `Download as Zip`.
 
-2. inside each course directory: notes broken into units or paper type; `notes on class` (fragmented notes taken on class)
+2. root directory is a list of my selected courses
 
-3. use Obsidian to open those markdown files for best experience (some note contains Obsidian styled links)
+3. inside each course directory: notes broken into units or paper type; `notes on class` (fragmented notes taken on class)
+
+4. use Obsidian to open those markdown files for best experience (some note contains Obsidian styled links)
 
 **use of AI**: Usage of AI is acknowledged, but I can say I verified them all and most of the note are pure human (except some history note). Some prompts are shared.
 
