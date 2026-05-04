@@ -64,3 +64,9 @@ This is not meant to be perfect or polished.
 It is meant to be useful.
 
 If you improve something, extend it, or reorganize it in a better way, that is exactly the point. Keep it open, keep it practical.
+
+## Acknowledgement
+
+> TODO: to be updated
+
+Thanks Kara 27' for scanning Chinese paper samples.
