@@ -1,3 +1,5 @@
+> still uploading. if missing notes, wait for a few days.
+
 # Gugu's IB Notes (a slice of my life in highschool)
 
 Dear Friends:
