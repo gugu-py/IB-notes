@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"6f4612efe8ade6f2","x":-185,"y":40,"width":250,"height":60,"type":"text","text":"Abigail Williams"},
+		{"id":"3e88936917aecf20","x":-185,"y":-180,"width":250,"height":60,"type":"text","text":"Tituba"},
+		{"id":"0f527d123ac142e9","x":280,"y":-180,"width":250,"height":60,"type":"text","text":"Thomas Putnam"},
+		{"id":"7e43097d264c9304","x":412,"y":-402,"width":250,"height":60,"type":"text","text":"Ruth Putnam"},
+		{"id":"a8acb1de5e47bb7a","x":720,"y":40,"width":250,"height":60,"type":"text","text":"Elizabeth Proctor"},
+		{"id":"6a48ec49e8503055","x":240,"y":40,"width":250,"height":60,"type":"text","text":"John Proctor"},
+		{"id":"d8f82eedce4a9091","x":845,"y":-180,"width":250,"height":60,"type":"text","text":"Ann Putnam"},
+		{"id":"f9599d0dad642537","x":1006,"y":-85,"width":250,"height":60,"type":"text","text":"Reverend Parris"},
+		{"id":"d0d656c1525decd8","x":1600,"y":-85,"width":250,"height":60,"type":"text","text":"Betty Parris"},
+		{"id":"4acaec68b13a954c","x":240,"y":200,"width":250,"height":60,"type":"text","text":"Giles Corey"},
+		{"id":"c9332ae2c1325fca","x":720,"y":200,"width":250,"height":60,"type":"text","text":"Martha Corey"},
+		{"id":"ec165685a081d2ef","x":240,"y":360,"width":250,"height":60,"type":"text","text":"Francis Nurse"},
+		{"id":"f7e973a40eaf8c74","x":720,"y":360,"width":250,"height":60,"type":"text","text":"Rebecca Nurse"},
+		{"id":"d9bea0b66dc6151e","x":-336,"y":160,"width":552,"height":707,"type":"text","text":"![[UWC/Eng/the crucible/_resources/Pasted image 20250103105154.png]]"}
+	],
+	"edges":[
+		{"id":"723a873f7febbb16","fromNode":"6f4612efe8ade6f2","fromSide":"top","toNode":"3e88936917aecf20","toSide":"bottom","color":"1"},
+		{"id":"60dbbf9ad0d547ec","fromNode":"0f527d123ac142e9","fromSide":"left","toNode":"3e88936917aecf20","toSide":"right","toEnd":"none","label":"Slave-Master"},
+		{"id":"831b02ba243d208b","fromNode":"0f527d123ac142e9","fromSide":"top","toNode":"7e43097d264c9304","toSide":"bottom","toEnd":"none","label":"Father-Daughter"},
+		{"id":"ef9710c79da1d565","fromNode":"7e43097d264c9304","fromSide":"right","toNode":"d8f82eedce4a9091","toSide":"top","toEnd":"none","label":"Mother-Daughter"},
+		{"id":"10f3df9c33e03438","fromNode":"0f527d123ac142e9","fromSide":"right","toNode":"d8f82eedce4a9091","toSide":"left","toEnd":"none","label":"husband-wife"},
+		{"id":"a9e2315dcbfe1e26","fromNode":"6a48ec49e8503055","fromSide":"right","toNode":"a8acb1de5e47bb7a","toSide":"left","toEnd":"none","label":"Husband-Wife"},
+		{"id":"912ea72207923a28","fromNode":"f9599d0dad642537","fromSide":"right","toNode":"d0d656c1525decd8","toSide":"left","toEnd":"none","label":"Father-Daughter"},
+		{"id":"fbb17e47f3334243","fromNode":"4acaec68b13a954c","fromSide":"right","toNode":"c9332ae2c1325fca","toSide":"left","toEnd":"none","label":"Husband-Wife"},
+		{"id":"8ed5de30d86e428c","fromNode":"ec165685a081d2ef","fromSide":"right","toNode":"f7e973a40eaf8c74","toSide":"left","toEnd":"none","label":"Husband-Wife"}
+	]
+}

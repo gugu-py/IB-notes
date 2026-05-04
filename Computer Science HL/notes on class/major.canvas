@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"type":"group","id":"757e2297059dcfe7","x":461,"y":-220,"width":290,"height":377,"label":"Key Algorithms"},
+		{"type":"text","text":"main (entrypoint, recieve user input of preferred command)","id":"3cca91b25a42701b","x":-300,"y":-40,"width":250,"height":60,"color":"6"},
+		{"type":"text","text":"def router","id":"18ad2b1847a74502","x":140,"y":-40,"width":250,"height":60,"color":"6"},
+		{"type":"text","text":"def bubble_sort","id":"a9ba2ab6b7412497","x":481,"y":-200,"width":250,"height":60,"color":"5"},
+		{"type":"text","text":"def seq_search","id":"e43e9c81f489a727","x":481,"y":-10,"width":250,"height":60,"color":"5"},
+		{"type":"text","text":"def selection_sort","id":"55212015fddab3ca","x":481,"y":-100,"width":250,"height":60,"color":"6"},
+		{"type":"text","text":"Richard","id":"e1a875b4bdacd2e8","x":-300,"y":190,"width":250,"height":60,"color":"6"},
+		{"type":"text","text":"Ifesinachi","id":"f614f87578a7e21a","x":-300,"y":280,"width":250,"height":60,"color":"5"},
+		{"type":"text","text":"if not found, print(help())","id":"e75b1a5f1b3df1f9","x":481,"y":500,"width":250,"height":60,"color":"6"},
+		{"type":"text","text":"def binary_search","id":"018538b7463683c6","x":481,"y":80,"width":250,"height":57,"color":"6"},
+		{"type":"text","text":"def set_list (allow user to set the list)","id":"7c3a237ef5f16d0e","x":481,"y":220,"width":250,"height":60,"color":"6"},
+		{"type":"text","text":"def help (print available commands)","id":"1f084094ce107dc3","x":481,"y":320,"width":250,"height":60,"color":"5"},
+		{"type":"text","text":"index of target, -1 if not found","id":"36788b716aac84b6","x":847,"y":34,"width":250,"height":60},
+		{"type":"text","text":"sorted list","id":"cae012f3d124a2ac","x":847,"y":-140,"width":250,"height":60},
+		{"type":"text","text":"output (loop back to input)","id":"5a64e1e5e5549137","x":1177,"y":-62,"width":250,"height":60},
+		{"type":"text","text":"Note:\n1. for each search function, first ask the user to enter the target, then perform the search\n2. catch user's error if invalid input detected\n","id":"17dc76d60299796c","x":800,"y":160,"width":377,"height":265},
+		{"type":"text","text":"def quit","id":"99a8bb6091c1230c","x":482,"y":410,"width":250,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"edb6457db3e86ee8","fromNode":"3cca91b25a42701b","fromSide":"right","toNode":"18ad2b1847a74502","toSide":"left","label":"command"},
+		{"id":"48b2eb5ec22ac2a2","fromNode":"18ad2b1847a74502","fromSide":"right","toNode":"a9ba2ab6b7412497","toSide":"left"},
+		{"id":"7287a19cc14d52fb","fromNode":"18ad2b1847a74502","fromSide":"right","toNode":"55212015fddab3ca","toSide":"left"},
+		{"id":"51e394112fdd4c9a","fromNode":"18ad2b1847a74502","fromSide":"right","toNode":"e43e9c81f489a727","toSide":"left"},
+		{"id":"4c2b1fbd145c1039","fromNode":"18ad2b1847a74502","fromSide":"right","toNode":"018538b7463683c6","toSide":"left"},
+		{"id":"c7cf201568dd939e","fromNode":"18ad2b1847a74502","fromSide":"right","toNode":"7c3a237ef5f16d0e","toSide":"left"},
+		{"id":"828657b9c1e031d1","fromNode":"18ad2b1847a74502","fromSide":"right","toNode":"1f084094ce107dc3","toSide":"left"},
+		{"id":"47e2aaf8a6d80ae0","fromNode":"18ad2b1847a74502","fromSide":"right","toNode":"e75b1a5f1b3df1f9","toSide":"left"},
+		{"id":"52eb5de763f85919","fromNode":"a9ba2ab6b7412497","fromSide":"right","toNode":"cae012f3d124a2ac","toSide":"left"},
+		{"id":"9881def407ba68ae","fromNode":"55212015fddab3ca","fromSide":"right","toNode":"cae012f3d124a2ac","toSide":"left"},
+		{"id":"8cf9a1a255b75175","fromNode":"e43e9c81f489a727","fromSide":"right","toNode":"36788b716aac84b6","toSide":"left"},
+		{"id":"beab41e4e167c0a7","fromNode":"018538b7463683c6","fromSide":"right","toNode":"36788b716aac84b6","toSide":"left"},
+		{"id":"906caa6ad9c32305","fromNode":"cae012f3d124a2ac","fromSide":"right","toNode":"5a64e1e5e5549137","toSide":"left"},
+		{"id":"95709b0b61af1181","fromNode":"36788b716aac84b6","fromSide":"right","toNode":"5a64e1e5e5549137","toSide":"left"},
+		{"id":"0dcc5d7e9af442e4","fromNode":"18ad2b1847a74502","fromSide":"right","toNode":"99a8bb6091c1230c","toSide":"left"}
+	]
+}

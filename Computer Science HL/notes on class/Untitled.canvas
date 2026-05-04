@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"a0ee5b4b57ad59fc","type":"group","x":-380,"y":180,"width":290,"height":419,"label":"deprecated"},
+		{"id":"f9dc45af638767d7","type":"text","text":"START","x":-220,"y":-140,"width":250,"height":60,"color":"1"},
+		{"id":"5478b57c64ec1491","type":"text","text":"Route to task","x":-220,"y":-4,"width":250,"height":60,"color":"6"},
+		{"id":"4c2b5638928f73a4","type":"text","text":"answer","x":225,"y":-3,"width":250,"height":60,"color":"6"},
+		{"id":"e8af68cda5905706","type":"text","text":"retrieve docs","x":-25,"y":340,"width":250,"height":60},
+		{"id":"625620f759ef4087","type":"text","text":"Answer and analyze base on knowledge","x":-25,"y":470,"width":250,"height":60,"color":"6"},
+		{"id":"e41da2ae7cdbd858","type":"text","text":"llm","x":320,"y":412,"width":250,"height":60,"color":"6"},
+		{"id":"5abab9195c50f4ea","type":"text","text":"execute code","x":320,"y":502,"width":250,"height":60,"color":"5"},
+		{"id":"51ceabf4b709b99b","type":"text","text":"END","x":225,"y":142,"width":250,"height":60,"color":"1"},
+		{"id":"a8ffaffdfccd542c","type":"text","text":"answer again","x":-610,"y":699,"width":250,"height":60,"color":"6"},
+		{"id":"23d105f671711d3d","type":"text","text":"END","x":-200,"y":699,"width":250,"height":60,"color":"1"},
+		{"id":"5c6239532365f75c","type":"text","text":"answer according to the exec result","x":-760,"y":304,"width":250,"height":60,"color":"5"},
+		{"id":"119ad8c83326a0c0","type":"text","text":"gen code to solve step by step","x":-760,"y":202,"width":250,"height":60,"color":"6"},
+		{"id":"18cd13bbf415f1a7","type":"text","text":"answer directly","x":-360,"y":200,"width":250,"height":60,"color":"6"},
+		{"id":"328e83d609d2b42b","type":"text","text":"perform the steps (step by step)","x":-360,"y":410,"width":250,"height":60,"color":"5"},
+		{"id":"5cdfb7c094b6b26c","type":"text","text":"gen code to verify","x":-360,"y":308,"width":250,"height":60,"color":"6"},
+		{"id":"570c6d809d78f8a0","type":"text","text":"feedback?","x":-360,"y":519,"width":250,"height":60,"color":"6"}
+	],
+	"edges":[
+		{"id":"b3c990095ed59d68","fromNode":"f9dc45af638767d7","fromSide":"bottom","toNode":"5478b57c64ec1491","toSide":"top"},
+		{"id":"a8f1b60ad9215151","fromNode":"5478b57c64ec1491","fromSide":"bottom","toNode":"18cd13bbf415f1a7","toSide":"top","label":"Maths"},
+		{"id":"59b575244cb2bd1e","fromNode":"5478b57c64ec1491","fromSide":"right","toNode":"4c2b5638928f73a4","toSide":"left","label":"other"},
+		{"id":"17b34fb91ec303b4","fromNode":"18cd13bbf415f1a7","fromSide":"bottom","toNode":"5cdfb7c094b6b26c","toSide":"top"},
+		{"id":"5ca06225540bc3c6","fromNode":"e8af68cda5905706","fromSide":"bottom","toNode":"625620f759ef4087","toSide":"top"},
+		{"id":"a3c78798010851df","fromNode":"625620f759ef4087","fromSide":"bottom","toNode":"23d105f671711d3d","toSide":"top"},
+		{"id":"c4199c1af0db30fa","fromNode":"4c2b5638928f73a4","fromSide":"bottom","toNode":"51ceabf4b709b99b","toSide":"top"},
+		{"id":"f710e47589003566","fromNode":"5478b57c64ec1491","fromSide":"bottom","toNode":"e8af68cda5905706","toSide":"top","label":"Doctor"},
+		{"id":"719d2f373d85aeda","fromNode":"5cdfb7c094b6b26c","fromSide":"bottom","toNode":"328e83d609d2b42b","toSide":"top"},
+		{"id":"d2d428f80b27fad7","fromNode":"328e83d609d2b42b","fromSide":"bottom","toNode":"570c6d809d78f8a0","toSide":"top"},
+		{"id":"1293c495752c7886","fromNode":"570c6d809d78f8a0","fromSide":"bottom","toNode":"23d105f671711d3d","toSide":"top","color":"4","label":"correct"},
+		{"id":"002ec62ec8434993","fromNode":"570c6d809d78f8a0","fromSide":"bottom","toNode":"a8ffaffdfccd542c","toSide":"top","color":"1"},
+		{"id":"8e7d8d7f63c9cca1","fromNode":"a8ffaffdfccd542c","fromSide":"right","toNode":"23d105f671711d3d","toSide":"left"},
+		{"id":"625212c31639f9d0","fromNode":"119ad8c83326a0c0","fromSide":"bottom","toNode":"5c6239532365f75c","toSide":"top"},
+		{"id":"a29f8146e77885c6","fromNode":"5478b57c64ec1491","fromSide":"bottom","toNode":"119ad8c83326a0c0","toSide":"top"},
+		{"id":"14164e4ccd80d3de","fromNode":"5c6239532365f75c","fromSide":"bottom","toNode":"23d105f671711d3d","toSide":"left"}
+	]
+}

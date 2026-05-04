@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"type":"group","id":"204435217632fe27","x":-707,"y":-227,"width":407,"height":261,"label":"Legend"},
+		{"type":"text","text":"if (sound > 60db) OR (the light over certain intensity)\n\t`Produce a signal`\n\nelse\n`\tsilent`","id":"46c4062fe70e829b","x":46,"y":-196,"width":250,"height":216,"color":"3"},
+		{"id":"e82cd6802f7bd93f","x":109,"y":-342,"width":125,"height":50,"type":"text","text":"user"},
+		{"type":"text","text":"activate switch","id":"8ea90c483ee29844","x":368,"y":-171,"width":250,"height":60,"color":"1"},
+		{"id":"de6de747e74247e7","x":368,"y":-63,"width":250,"height":60,"color":"1","type":"text","text":"switch on for 1 min"},
+		{"type":"text","text":"light sensor","id":"ceb98441ad2faa67","x":-227,"y":-161,"width":148,"height":50,"color":"5"},
+		{"type":"text","text":"sound sensor","id":"f8a8fd4ff13400ca","x":-227,"y":-83,"width":148,"height":53,"color":"5"},
+		{"type":"text","text":"sensor","id":"43870372c5d570b6","x":-687,"y":-207,"width":125,"height":60,"color":"5"},
+		{"type":"text","text":"processor","id":"039f8d67aa238350","x":-687,"y":-127,"width":125,"height":60,"color":"3"},
+		{"type":"text","text":"actuator","id":"43ca49756cfe023b","x":-687,"y":-46,"width":125,"height":60,"color":"1"},
+		{"id":"bc5d52c25ed175c3","x":-520,"y":-207,"width":188,"height":60,"color":"4","type":"text","text":"analog to digital"},
+		{"id":"b8a4980dd9e38fdb","x":-520,"y":-127,"width":188,"height":60,"color":"6","type":"text","text":"digital to analog"},
+		{"id":"2df8b5d1d9dd5fb6","x":-520,"y":-46,"width":188,"height":60,"type":"text","text":"same signal type"},
+		{"id":"8bee662244410df3","x":-687,"y":69,"width":691,"height":483,"type":"text","text":"## Description of observed control systems\n\nThis centralized system is a open-loop sound-activated automatic light switch that detects both sound intensity and ambient lighting conditions. The VU meter senses sound, while the LDR monitors light levels, converting these analog inputs into digital signals processed by a processor. When a person approaches (and makes a sound), the system turns the light ON for 1 minute if it is dark(sensed by LDR and determined by processor). This system is suitable for settings like hotels, corridors, garages, and basements."},
+		{"id":"cecea86ff5489bae","x":46,"y":69,"width":487,"height":483,"type":"text","text":"## Control System Intro\n\nA **control system** manages and regulates devices or systems using the **Input-Process-Output (IPO) model**, where sensors detect input, a microprocessor processes data, and actuators execute actions. Systems can be **open-loop** (no feedback) or **closed-loop** (using feedback to correct errors, e.g., negative feedback for stability). Control can be **centralized** (one processor) or **distributed** (multiple processors). "}
+	],
+	"edges":[
+		{"id":"1b50dd71e4b6da1b","fromNode":"ceb98441ad2faa67","fromSide":"right","toNode":"46c4062fe70e829b","toSide":"left","color":"4"},
+		{"id":"6ef7f71778d2511f","fromNode":"f8a8fd4ff13400ca","fromSide":"right","toNode":"46c4062fe70e829b","toSide":"left","color":"4"},
+		{"id":"3fd2eca1aed1b341","fromNode":"46c4062fe70e829b","fromSide":"right","toNode":"8ea90c483ee29844","toSide":"left"},
+		{"id":"21faebe7661283b7","fromNode":"8ea90c483ee29844","fromSide":"bottom","toNode":"de6de747e74247e7","toSide":"top","color":"6"},
+		{"id":"03a5a536c920a6d5","fromNode":"e82cd6802f7bd93f","fromSide":"bottom","toNode":"46c4062fe70e829b","toSide":"top","label":"customize thresholds"}
+	]
+}
