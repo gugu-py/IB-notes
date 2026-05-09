@@ -17,6 +17,11 @@ IGNORE_FILES = {
     "index.md",
 }
 
+INDEX_EXTS = {
+    ".md",
+    ".pdf",
+}
+
 
 def should_skip(path: Path) -> bool:
     return path.name in IGNORE_FILES or any(part in IGNORE_DIRS for part in path.parts)
@@ -26,15 +31,19 @@ def title_for(path: Path) -> str:
     return path.stem.replace("-", " ").replace("_", " ").title()
 
 
-def has_notes(path: Path) -> bool:
-    return any(child.is_file() and child.suffix == ".md" and not should_skip(child) for child in path.rglob("*.md"))
+def is_indexed_file(path: Path) -> bool:
+    return path.is_file() and path.suffix.lower() in INDEX_EXTS and not should_skip(path)
 
 
-def note_children(path: Path) -> list[Path]:
+def has_indexed_files(path: Path) -> bool:
+    return any(is_indexed_file(child) for child in path.rglob("*"))
+
+
+def file_children(path: Path) -> list[Path]:
     return sorted(
         child
         for child in path.iterdir()
-        if child.is_file() and child.suffix == ".md" and not should_skip(child)
+        if is_indexed_file(child)
     )
 
 
@@ -42,19 +51,19 @@ def dir_children(path: Path) -> list[Path]:
     return sorted(
         child
         for child in path.iterdir()
-        if child.is_dir() and not should_skip(child) and has_notes(child)
+        if child.is_dir() and not should_skip(child) and has_indexed_files(child)
     )
 
 
 def append_tree(lines: list[str], path: Path, depth: int = 0) -> None:
     indent = "  " * depth
 
+    for file in file_children(path):
+        lines.append(f"{indent}- [{title_for(file)}]({file.as_posix()})")
+
     for directory in dir_children(path):
         lines.append(f"{indent}- **{directory.name}**")
         append_tree(lines, directory, depth + 1)
-
-    for note in note_children(path):
-        lines.append(f"{indent}- [{title_for(note)}]({note.as_posix()})")
 
 
 def build_index() -> str:
@@ -64,6 +73,22 @@ def build_index() -> str:
         "---",
         "",
         "# Notes Index",
+        "",
+        "Repository: [gugu-py/IB-notes](https://github.com/gugu-py/IB-notes)",
+        "",
+        "**Before using this website, please read the [README](README.md) in full.** It explains the scope, license, disclaimer, and recommended use of these notes.",
+        "",
+        "## Quick Navigation",
+        "",
+        "Use browser search (`Ctrl+F` / `Cmd+F`) to quickly find a course, topic, paper type, or keyword.",
+        "",
+        "- Bold items are folders.",
+        "- Linked items are notes or PDF files.",
+        "- Files appear before subfolders.",
+        "- PDF sample papers are included in the tree.",
+        "- Some notes contain Obsidian-style links.",
+        "",
+        "## Full Tree",
         "",
     ]
 

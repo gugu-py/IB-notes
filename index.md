@@ -1,0 +1,371 @@
+---
+title: Home
+---
+
+# Notes Index
+
+Repository: [gugu-py/IB-notes](https://github.com/gugu-py/IB-notes)
+
+**Before using this website, please read the [README](README.md) in full.** It explains the scope, license, disclaimer, and recommended use of these notes.
+
+## Quick Navigation
+
+Use browser search (`Ctrl+F` / `Cmd+F`) to quickly find a course, topic, paper type, or keyword.
+
+- Bold items are folders.
+- Linked items are notes or PDF files.
+- Files appear before subfolders.
+- PDF sample papers are included in the tree.
+- Some notes contain Obsidian-style links.
+
+## Full Tree
+
+- **Chinese A lanlit SL**
+  - [Paper 1](Chinese A lanlit SL/paper 1.md)
+  - [Paper 2](Chinese A lanlit SL/paper 2.md)
+  - **notes and HW on class**
+    - [0822语言](Chinese A lanlit SL/notes and HW on class/0822语言.md)
+    - [0912课堂活动](Chinese A lanlit SL/notes and HW on class/0912课堂活动.md)
+    - [Io结构](Chinese A lanlit SL/notes and HW on class/IO结构.md)
+    - [《朗读者》阅读卡片](Chinese A lanlit SL/notes and HW on class/《朗读者》阅读卡片.md)
+    - [商业性和艺术性](Chinese A lanlit SL/notes and HW on class/商业性和艺术性.md)
+    - [外卖大战](Chinese A lanlit SL/notes and HW on class/外卖大战.md)
+    - [新闻评论 分析之法](Chinese A lanlit SL/notes and HW on class/新闻评论 分析之法.md)
+    - [新闻评论分析](Chinese A lanlit SL/notes and HW on class/新闻评论分析.md)
+    - [演讲 语言通胀](Chinese A lanlit SL/notes and HW on class/演讲 语言通胀.md)
+    - **2024**
+      - [!分析的语言](Chinese A lanlit SL/notes and HW on class/2024/!分析的语言.md)
+      - [20240910 Ib Concepts](Chinese A lanlit SL/notes and HW on class/2024/20240910 IB Concepts.md)
+      - [20241015台北人冬夜](Chinese A lanlit SL/notes and HW on class/2024/20241015台北人冬夜.md)
+      - [20241119通讯分析作业](Chinese A lanlit SL/notes and HW on class/2024/20241119通讯分析作业.md)
+      - [20241126白先勇是谁](Chinese A lanlit SL/notes and HW on class/2024/20241126白先勇是谁.md)
+      - [20241210 通润Fieldtrip](Chinese A lanlit SL/notes and HW on class/2024/20241210 通润fieldtrip.md)
+      - [240927新闻](Chinese A lanlit SL/notes and HW on class/2024/240927新闻.md)
+      - [Io 20241210](Chinese A lanlit SL/notes and HW on class/2024/IO 20241210.md)
+      - [Intro小说和新闻240920](Chinese A lanlit SL/notes and HW on class/2024/Intro小说和新闻240920.md)
+      - [杜鹃花和新闻20241105](Chinese A lanlit SL/notes and HW on class/2024/杜鹃花和新闻20241105.md)
+      - [理想与现实20241025](Chinese A lanlit SL/notes and HW on class/2024/理想与现实20241025.md)
+      - **hw**
+        - [Outline 通讯分析V2](Chinese A lanlit SL/notes and HW on class/2024/hw/outline 通讯分析v2.md)
+        - [Outline通讯分析](Chinese A lanlit SL/notes and HW on class/2024/hw/outline通讯分析.md)
+        - [个人反思1](Chinese A lanlit SL/notes and HW on class/2024/hw/个人反思1.md)
+        - [全球性问题提案](Chinese A lanlit SL/notes and HW on class/2024/hw/全球性问题提案.md)
+        - [全球性问题提案提纲](Chinese A lanlit SL/notes and HW on class/2024/hw/全球性问题提案提纲.md)
+        - [台北人全球性问题](Chinese A lanlit SL/notes and HW on class/2024/hw/台北人全球性问题.md)
+        - [台北人读后感1](Chinese A lanlit SL/notes and HW on class/2024/hw/台北人读后感1.md)
+        - [通讯分析](Chinese A lanlit SL/notes and HW on class/2024/hw/通讯分析.md)
+        - [通讯分析V2](Chinese A lanlit SL/notes and HW on class/2024/hw/通讯分析v2.md)
+    - **hw**
+      - [Outline Paper1 广告练习](Chinese A lanlit SL/notes and HW on class/hw/outline paper1 广告练习.md)
+      - [Paper1 广告练习 V2](Chinese A lanlit SL/notes and HW on class/hw/paper1 广告练习 v2.md)
+      - [Paper1 广告练习](Chinese A lanlit SL/notes and HW on class/hw/paper1 广告练习.md)
+      - [乱世凶年](Chinese A lanlit SL/notes and HW on class/hw/乱世凶年.md)
+      - [末代皇帝 三个细节](Chinese A lanlit SL/notes and HW on class/hw/末代皇帝 三个细节.md)
+      - [构图](Chinese A lanlit SL/notes and HW on class/hw/构图.md)
+      - [模考前的卷二练习（一）](Chinese A lanlit SL/notes and HW on class/hw/模考前的卷二练习（一）.md)
+      - [模考前的卷二练习（三）](Chinese A lanlit SL/notes and HW on class/hw/模考前的卷二练习（三）.md)
+      - [模考前的卷二练习（二）](Chinese A lanlit SL/notes and HW on class/hw/模考前的卷二练习（二）.md)
+      - [电影中的全球性问题](Chinese A lanlit SL/notes and HW on class/hw/电影中的全球性问题.md)
+      - [藩镇割据时期杜甫诗句](Chinese A lanlit SL/notes and HW on class/hw/藩镇割据时期杜甫诗句.md)
+      - [身体书写 金朗对比](Chinese A lanlit SL/notes and HW on class/hw/身体书写 金朗对比.md)
+      - **IO练习Apr**
+        - [Io练习Apr](Chinese A lanlit SL/notes and HW on class/hw/IO练习Apr/IO练习Apr.md)
+        - [Exerpt](Chinese A lanlit SL/notes and HW on class/hw/IO练习Apr/exerpt.md)
+        - [提示](Chinese A lanlit SL/notes and HW on class/hw/IO练习Apr/提示.md)
+    - **台北人**
+      - [20241101杜鹃花](Chinese A lanlit SL/notes and HW on class/台北人/20241101杜鹃花.md)
+      - [20241115岁除](Chinese A lanlit SL/notes and HW on class/台北人/20241115岁除.md)
+      - [20241217 游园惊梦](Chinese A lanlit SL/notes and HW on class/台北人/20241217 游园惊梦.md)
+      - [Chap 1永远的伊雪艳](Chinese A lanlit SL/notes and HW on class/台北人/Chap 1永远的伊雪艳.md)
+      - [Chap 2一把青](Chinese A lanlit SL/notes and HW on class/台北人/chap 2一把青.md)
+      - [Chap3 岁除](Chinese A lanlit SL/notes and HW on class/台北人/chap3 岁除.md)
+      - [Chap4 金大班的最后一夜](Chinese A lanlit SL/notes and HW on class/台北人/chap4 金大班的最后一夜.md)
+      - [Chap5 那片血](Chinese A lanlit SL/notes and HW on class/台北人/chap5 那片血.md)
+      - [《台北人》人物分析](Chinese A lanlit SL/notes and HW on class/台北人/《台北人》人物分析.md)
+      - [台北人](Chinese A lanlit SL/notes and HW on class/台北人/台北人.md)
+      - [梁父吟](Chinese A lanlit SL/notes and HW on class/台北人/梁父吟.md)
+      - [游园惊梦](Chinese A lanlit SL/notes and HW on class/台北人/游园惊梦.md)
+      - [理想与现实20241018](Chinese A lanlit SL/notes and HW on class/台北人/理想与现实20241018.md)
+    - **广告**
+      - [Paper1](Chinese A lanlit SL/notes and HW on class/广告/paper1.md)
+      - [分析方法](Chinese A lanlit SL/notes and HW on class/广告/分析方法.md)
+      - [基本概念](Chinese A lanlit SL/notes and HW on class/广告/基本概念.md)
+      - [战争主题](Chinese A lanlit SL/notes and HW on class/广告/战争主题.md)
+    - **朗读者**
+      - [1014](Chinese A lanlit SL/notes and HW on class/朗读者/1014.md)
+      - [Paper2准备](Chinese A lanlit SL/notes and HW on class/朗读者/paper2准备.md)
+      - [Paper2段落练习](Chinese A lanlit SL/notes and HW on class/朗读者/paper2段落练习.md)
+      - [主线](Chinese A lanlit SL/notes and HW on class/朗读者/主线.md)
+      - [二战](Chinese A lanlit SL/notes and HW on class/朗读者/二战.md)
+      - [人物形象](Chinese A lanlit SL/notes and HW on class/朗读者/人物形象.md)
+      - [冲突分析](Chinese A lanlit SL/notes and HW on class/朗读者/冲突分析.md)
+      - [蒙昧](Chinese A lanlit SL/notes and HW on class/朗读者/蒙昧.md)
+    - **末代皇帝**
+      - [20250121镜头语言](Chinese A lanlit SL/notes and HW on class/末代皇帝/20250121镜头语言.md)
+      - [20250124 偏见](Chinese A lanlit SL/notes and HW on class/末代皇帝/20250124 偏见.md)
+      - [叙事和意象 20250117](Chinese A lanlit SL/notes and HW on class/末代皇帝/叙事和意象 20250117.md)
+      - [末代皇帝 Foreign](Chinese A lanlit SL/notes and HW on class/末代皇帝/末代皇帝 foreign.md)
+      - [电影Intro 20250114](Chinese A lanlit SL/notes and HW on class/末代皇帝/电影intro 20250114.md)
+    - **杜甫**
+      - [Io论述片段练习](Chinese A lanlit SL/notes and HW on class/杜甫/IO论述片段练习.md)
+      - [战争主题和全球性问题](Chinese A lanlit SL/notes and HW on class/杜甫/战争主题和全球性问题.md)
+      - [杜甫](Chinese A lanlit SL/notes and HW on class/杜甫/杜甫.md)
+      - [登高 和 望岳](Chinese A lanlit SL/notes and HW on class/杜甫/登高 和 望岳.md)
+      - [自京赴奉先县咏怀五百字](Chinese A lanlit SL/notes and HW on class/杜甫/自京赴奉先县咏怀五百字.md)
+      - [诗歌](Chinese A lanlit SL/notes and HW on class/杜甫/诗歌.md)
+      - [阶级主题（杜甫和寄生虫）](Chinese A lanlit SL/notes and HW on class/杜甫/阶级主题（杜甫和寄生虫）.md)
+    - **金陵十三钗**
+      - [阅读卡片](Chinese A lanlit SL/notes and HW on class/金陵十三钗/阅读卡片.md)
+  - **samples**
+    - [Paper 1 Ad 趣多多](Chinese A lanlit SL/samples/Paper 1 Ad 趣多多.pdf)
+    - [Paper 1 新闻夜骑开封 16](Chinese A lanlit SL/samples/Paper 1 新闻夜骑开封 16.pdf)
+    - [Paper 2 看待世界不同方式 18](Chinese A lanlit SL/samples/Paper 2 看待世界不同方式 18.pdf)
+    - [Paper1 公益广告 为乡村儿童捐书 17](Chinese A lanlit SL/samples/paper1 公益广告 为乡村儿童捐书 17.pdf)
+    - [Paper1 公益广告回声计划 15](Chinese A lanlit SL/samples/paper1 公益广告回声计划 15.pdf)
+    - [Paper1 新闻 博主采访](Chinese A lanlit SL/samples/paper1 新闻 博主采访.pdf)
+    - [Paper1 残奥冠军 新闻](Chinese A lanlit SL/samples/paper1 残奥冠军 新闻.pdf)
+    - [Paper1 评论 躺平 15](Chinese A lanlit SL/samples/paper1 评论 躺平 15.pdf)
+- **Computer Science HL**
+  - [Option D](Computer Science HL/Option D.md)
+  - [Pseudocode Manual](Computer Science HL/Pseudocode Manual.md)
+  - [Case Study](Computer Science HL/case study.md)
+  - [General](Computer Science HL/general.md)
+  - [Topic 1.1 Ethics](Computer Science HL/topic 1.1 ethics.md)
+  - [Topic 1](Computer Science HL/topic 1.md)
+  - [Topic 2](Computer Science HL/topic 2.md)
+  - [Topic 3](Computer Science HL/topic 3.md)
+  - [Topic 4 Computational Thinking](Computer Science HL/topic 4-Computational Thinking.md)
+  - [Topic 5](Computer Science HL/topic 5.md)
+  - [Topic 6 Resource Management](Computer Science HL/topic 6-Resource Management.md)
+  - [Topic 7 Control Systems Concepts](Computer Science HL/topic 7-Control Systems Concepts.md)
+  - **notes on class**
+    - [20241210](Computer Science HL/notes on class/20241210.md)
+    - [Case Study Group Task](Computer Science HL/notes on class/Case Study Group Task.md)
+    - [Essay On Ethical Analysis In Penetration Testing](Computer Science HL/notes on class/Essay on Ethical Analysis in Penetration Testing.md)
+    - [Machine Learing](Computer Science HL/notes on class/Machine Learing.md)
+    - [New System Installation Process](Computer Science HL/notes on class/New System Installation process.md)
+    - [Python Full Course For Free(Personal Note)](Computer Science HL/notes on class/Python Full Course for free(Personal Note).md)
+    - [Outline Essay On Ethical Analysis In Penetration Testing](Computer Science HL/notes on class/outline Essay on Ethical Analysis in Penetration Testing.md)
+    - [Outline Implementation Of Basic Algorithms](Computer Science HL/notes on class/outline Implementation of basic Algorithms.md)
+    - [Report Implementation Of Basic Algorithms](Computer Science HL/notes on class/report Implementation of basic Algorithms.md)
+    - [Sound Light Poster Pure Text](Computer Science HL/notes on class/sound light poster pure text.md)
+    - [Topic 4](Computer Science HL/notes on class/topic 4.md)
+- **English A lanlit SL**
+  - [Paper 1](English A lanlit SL/paper 1.md)
+  - [Paper2](English A lanlit SL/paper2.md)
+  - [Paper2弹药库](English A lanlit SL/paper2弹药库.md)
+  - **notes on class**
+    - [Io](English A lanlit SL/notes on class/IO.md)
+    - [Postmodernism](English A lanlit SL/notes on class/Postmodernism.md)
+    - [Untitled](English A lanlit SL/notes on class/Untitled.md)
+    - [Devices](English A lanlit SL/notes on class/devices.md)
+    - [Visual Analysis](English A lanlit SL/notes on class/visual analysis.md)
+    - **2024**
+      - [20240611](English A lanlit SL/notes on class/2024/20240611.md)
+      - [20240913](English A lanlit SL/notes on class/2024/20240913.md)
+      - [20240918](English A lanlit SL/notes on class/2024/20240918.md)
+      - [20240920](English A lanlit SL/notes on class/2024/20240920.md)
+      - [20240925](English A lanlit SL/notes on class/2024/20240925.md)
+      - [20240927](English A lanlit SL/notes on class/2024/20240927.md)
+      - [20241009](English A lanlit SL/notes on class/2024/20241009.md)
+      - [20241011](English A lanlit SL/notes on class/2024/20241011.md)
+      - [20241016](English A lanlit SL/notes on class/2024/20241016.md)
+      - [20241018](English A lanlit SL/notes on class/2024/20241018.md)
+      - [20241025](English A lanlit SL/notes on class/2024/20241025.md)
+      - [20241030](English A lanlit SL/notes on class/2024/20241030.md)
+      - [20241101](English A lanlit SL/notes on class/2024/20241101.md)
+      - [20241120](English A lanlit SL/notes on class/2024/20241120.md)
+      - [20241211](English A lanlit SL/notes on class/2024/20241211.md)
+      - [20241213](English A lanlit SL/notes on class/2024/20241213.md)
+      - [20241218](English A lanlit SL/notes on class/2024/20241218.md)
+      - [A Talk To Teacher(Ori)](English A lanlit SL/notes on class/2024/A Talk to teacher(ori).md)
+      - [Feedback 20241129](English A lanlit SL/notes on class/2024/feedback 20241129.md)
+      - [Questions A Talk To Teacher](English A lanlit SL/notes on class/2024/questions a talk to teacher.md)
+      - **HW**
+        - [Compare Media Coverage Of Same Issue](English A lanlit SL/notes on class/2024/HW/Compare media coverage of same issue.md)
+        - [Evaluate Meaning In 3 Articles](English A lanlit SL/notes on class/2024/HW/Evaluate Meaning in 3 articles.md)
+        - [Matika Wilbur Questions](English A lanlit SL/notes on class/2024/HW/Matika Wilbur questions.md)
+        - [What Makes Chinese](English A lanlit SL/notes on class/2024/HW/What makes Chinese.md)
+        - [Compare Two Nl Pieces](English A lanlit SL/notes on class/2024/HW/compare two NL pieces.md)
+        - [Outline What Makes Chinese](English A lanlit SL/notes on class/2024/HW/outline What makes Chinese.md)
+        - [Outline Compare Two Nl Pieces](English A lanlit SL/notes on class/2024/HW/outline compare two NL pieces.md)
+        - [Outline We Are Nurses](English A lanlit SL/notes on class/2024/HW/outline we are nurses.md)
+        - [Ppt 3Photo Analysis](English A lanlit SL/notes on class/2024/HW/ppt 3photo analysis.md)
+        - [Script 3Photo Analysis](English A lanlit SL/notes on class/2024/HW/script 3photo analysis.md)
+        - [We Are Nurses](English A lanlit SL/notes on class/2024/HW/we are nurses.md)
+    - **Advertisement**
+      - [Methods](English A lanlit SL/notes on class/Advertisement/Methods.md)
+      - [Nike](English A lanlit SL/notes on class/Advertisement/Nike.md)
+    - **Human Act**
+      - [Article Summary](English A lanlit SL/notes on class/Human Act/Article Summary.md)
+      - [Bullets](English A lanlit SL/notes on class/Human Act/Bullets.md)
+      - [Discussion Q For Chap 3](English A lanlit SL/notes on class/Human Act/Discussion Q for Chap 3.md)
+    - **IO prac**
+      - [2025 04 06](English A lanlit SL/notes on class/IO prac/2025-04-06.md)
+      - [Exerpt](English A lanlit SL/notes on class/IO prac/exerpt.md)
+      - [Points+Exerpt](English A lanlit SL/notes on class/IO prac/points+exerpt.md)
+      - [Points](English A lanlit SL/notes on class/IO prac/points.md)
+    - **Palestine**
+      - [Audrey Note](English A lanlit SL/notes on class/Palestine/Audrey note.md)
+    - **hw**
+      - [No More Refugee](English A lanlit SL/notes on class/hw/No more Refugee.md)
+      - [Practice1025](English A lanlit SL/notes on class/hw/Practice1025.md)
+      - [Outline Paper2 Prac](English A lanlit SL/notes on class/hw/outline paper2 prac.md)
+      - [Paper2 Prac 0216](English A lanlit SL/notes on class/hw/paper2 prac 0216.md)
+    - **small country**
+      - [2 Excerpts And Tone](English A lanlit SL/notes on class/small country/2 excerpts and tone.md)
+      - [Key Excerpt](English A lanlit SL/notes on class/small country/Key excerpt.md)
+      - [Guiding Questions](English A lanlit SL/notes on class/small country/guiding questions.md)
+      - [Interview Of Author](English A lanlit SL/notes on class/small country/interview of author.md)
+    - **summary**
+      - [Overall Paradigm](English A lanlit SL/notes on class/summary/Overall Paradigm.md)
+    - **the crucible**
+      - [20250108](English A lanlit SL/notes on class/the crucible/20250108.md)
+      - [20250115](English A lanlit SL/notes on class/the crucible/20250115.md)
+      - [20250228 Class Work](English A lanlit SL/notes on class/the crucible/20250228 class work.md)
+      - [20250314](English A lanlit SL/notes on class/the crucible/20250314.md)
+      - [Article Beware Of The Loss Of Conscience The Crucible As Warning For Today](English A lanlit SL/notes on class/the crucible/Article Beware of the Loss of Conscience The Crucible as Warning for Today.md)
+      - [Act1](English A lanlit SL/notes on class/the crucible/act1.md)
+      - [Connection Between Shakespear And Crucible](English A lanlit SL/notes on class/the crucible/connection between Shakespear and crucible.md)
+      - **analysis**
+        - [Act1](English A lanlit SL/notes on class/the crucible/analysis/act1.md)
+- **History HL**
+  - [Afghanistan](History HL/Afghanistan.md)
+  - [Paper2](History HL/paper2.md)
+  - [Paper3](History HL/paper3.md)
+  - [Writing Tip](History HL/writing tip.md)
+  - **Cuba**
+    - **Castro**
+      - [Consolidation](History HL/Cuba/Castro/Consolidation.md)
+      - [Domestic Social Policy](History HL/Cuba/Castro/domestic social policy.md)
+      - [Paper2 Authoritarian State](History HL/Cuba/Castro/paper2 authoritarian state.md)
+      - **sessions**
+        - [1 Timeline](History HL/Cuba/Castro/sessions/1 timeline.md)
+        - [2 Condition](History HL/Cuba/Castro/sessions/2 Condition.md)
+        - [3 Methods](History HL/Cuba/Castro/sessions/3 methods.md)
+    - **Independence**
+      - [Paper2 Independence Movement](History HL/Cuba/Independence/paper2 Independence Movement.md)
+      - **sections**
+        - [1 Origin And Rise Of Independence Movements](History HL/Cuba/Independence/sections/1 Origin and rise of independence movements.md)
+        - [2.1 Methods And Success](History HL/Cuba/Independence/sections/2.1 methods and success.md)
+        - [3 After Independence Challenges And Responses](History HL/Cuba/Independence/sections/3 After Independence Challenges and Responses.md)
+      - **themes**
+        - [2.2 Us Role](History HL/Cuba/Independence/themes/2.2 US role.md)
+        - [Jose Marti](History HL/Cuba/Independence/themes/Jose Marti.md)
+        - [Nationalism](History HL/Cuba/Independence/themes/Nationalism.md)
+        - [Slavery(Raw)](History HL/Cuba/Independence/themes/Slavery(Raw).md)
+        - [Leaders In Independence Wars](History HL/Cuba/Independence/themes/leaders in independence wars.md)
+  - **Germany**
+    - [Consolidation Of Power](History HL/Germany/Consolidation of Power.md)
+    - [Domestic Social Policy](History HL/Germany/domestic social policy.md)
+    - [Paper2 Authoritarian State](History HL/Germany/paper2 Authoritarian State.md)
+    - [Propaganda 1933 Infographic](History HL/Germany/propaganda 1933 infographic.md)
+    - [Timeline](History HL/Germany/timeline.md)
+    - **Sections**
+      - [Conditions](History HL/Germany/Sections/Conditions.md)
+      - [Methods To Establish](History HL/Germany/Sections/Methods to Establish.md)
+  - **India**
+    - [Hl Topic 6 India, Afghanistan And Burma](History HL/India/HL Topic 6 India, Afghanistan and Burma.md)
+    - [Paper 3 Nationalism And Independence In India](History HL/India/paper 3 Nationalism and independence in India.md)
+    - [Paper2 Independence](History HL/India/paper2 Independence.md)
+    - [Paper3 India, Afghanistan And Burma](History HL/India/paper3 India, Afghanistan and Burma.md)
+    - **BEIC Before 1858**
+      - [1 Mughals And Beic](History HL/India/BEIC Before 1858/1 Mughals and BEIC.md)
+      - [10 Government Of India Act 1858](History HL/India/BEIC Before 1858/10 Government of India Act 1858.md)
+      - [2.1 Planning Battle Of Plassey](History HL/India/BEIC Before 1858/2.1 Planning Battle of Plassey.md)
+      - [2.2 Battle Of Plassey Essay](History HL/India/BEIC Before 1858/2.2 Battle of Plassey Essay.md)
+      - [3 Anglo Mysore Wars](History HL/India/BEIC Before 1858/3 Anglo-Mysore Wars.md)
+      - [3.1 First Anglo Mysore War](History HL/India/BEIC Before 1858/3.1 First Anglo-Mysore War.md)
+      - [4 The Regulating Act And Pitts India Act](History HL/India/BEIC Before 1858/4 the Regulating Act and Pitts India Act.md)
+      - **9 Indian Uprising 1857**
+        - [Course](History HL/India/BEIC Before 1858/9 Indian Uprising 1857/Course.md)
+        - [Cause Of Sepoy Rebellion](History HL/India/BEIC Before 1858/9 Indian Uprising 1857/cause of Sepoy Rebellion.md)
+        - [Cause](History HL/India/BEIC Before 1858/9 Indian Uprising 1857/cause.md)
+        - [Consequence](History HL/India/BEIC Before 1858/9 Indian Uprising 1857/consequence.md)
+      - **Governor-Generals**
+        - [5 Warren Hastings](History HL/India/BEIC Before 1858/Governor-Generals/5 Warren Hastings.md)
+        - [6 Richard Wellesley](History HL/India/BEIC Before 1858/Governor-Generals/6 Richard Wellesley.md)
+        - [7 Bentinck](History HL/India/BEIC Before 1858/Governor-Generals/7 Bentinck.md)
+        - [8 Dalhousie](History HL/India/BEIC Before 1858/Governor-Generals/8 Dalhousie.md)
+        - [C&C Bentinck And Dalhousie](History HL/India/BEIC Before 1858/Governor-Generals/C&C Bentinck and Dalhousie.md)
+    - **India Independent Movement**
+      - [(Not Finished) 4.1 Wwi](History HL/India/India Independent Movement/(Not finished) 4.1 WWI.md)
+      - [1 Background](History HL/India/India Independent Movement/1 background.md)
+      - [2 Great Famine](History HL/India/India Independent Movement/2 Great Famine.md)
+      - [3 Bengal Partition, Sima Deputation, 1909 Act](History HL/India/India Independent Movement/3 Bengal Partition, Sima Deputation, 1909 Act.md)
+      - [4.2 Home Rule](History HL/India/India Independent Movement/4.2 Home Rule.md)
+      - [5 Rowllets Act And Amritsar Massacre](History HL/India/India Independent Movement/5 Rowllets Act and Amritsar Massacre.md)
+      - [6 Montagu  Chelmsford Proposal 1919](History HL/India/India Independent Movement/6 Montagu- Chelmsford Proposal 1919.md)
+      - [7 Khilafat Movement 1919–1924](History HL/India/India Independent Movement/7 Khilafat Movement 1919–1924.md)
+      - [Impact Of Wwii](History HL/India/India Independent Movement/Impact of WWII.md)
+      - [Mountbatten](History HL/India/India Independent Movement/Mountbatten.md)
+      - [Post Independence](History HL/India/India Independent Movement/Post Independence.md)
+      - [Round Table Conferences](History HL/India/India Independent Movement/Round Table Conferences.md)
+    - **themes**
+      - [Two Nation Theory](History HL/India/themes/Two Nation Theory.md)
+      - [Culture And Religion](History HL/India/themes/culture and religion.md)
+      - [Economic](History HL/India/themes/economic.md)
+      - [Methods](History HL/India/themes/methods.md)
+      - [Policies](History HL/India/themes/policies.md)
+      - [Protests](History HL/India/themes/protests.md)
+      - **raw**
+        - [Policies Raw](History HL/India/themes/raw/policies raw.md)
+        - [Protests Raw](History HL/India/themes/raw/protests raw.md)
+        - [Raw Culture And Religion](History HL/India/themes/raw/raw culture and religion.md)
+        - [Raw Economic](History HL/India/themes/raw/raw economic.md)
+  - **Kosovo**
+    - [Long Term Causes](History HL/Kosovo/Long Term causes.md)
+    - [Social And Economic Impacts](History HL/Kosovo/Social and Economic impacts.md)
+    - [Course And Intevention](History HL/Kosovo/course and intevention.md)
+    - [Short Term Cause Of Conflict](History HL/Kosovo/short-term cause of conflict.md)
+  - **paper 2 comparison**
+    - [Castro Vs Hitler](History HL/paper 2 comparison/Castro vs Hitler.md)
+    - [Untitled](History HL/paper 2 comparison/Untitled.md)
+  - **rwanda**
+    - [Rwanda Topic](History HL/rwanda/Rwanda Topic.md)
+    - **prac**
+      - [2 Paper1](History HL/rwanda/prac/2 paper1.md)
+      - [20241127Paper1](History HL/rwanda/prac/20241127paper1.md)
+      - [3 Paper1](History HL/rwanda/prac/3 paper1.md)
+      - [4 Paper1](History HL/rwanda/prac/4 paper1.md)
+      - [5 Paper1](History HL/rwanda/prac/5 paper1.md)
+      - [6 Paper1](History HL/rwanda/prac/6 paper1.md)
+    - **sections**
+      - [1 Background](History HL/rwanda/sections/1 Background.md)
+      - [2 Colonial Rwanda,1884 1962](History HL/rwanda/sections/2 Colonial Rwanda,1884-1962.md)
+      - [3 Independence And Wars](History HL/rwanda/sections/3 Independence and Wars.md)
+      - [4.1 Last Year Of The Habyarimana Regime](History HL/rwanda/sections/4.1 Last year of the Habyarimana regime.md)
+      - [4.2 Arusha Peace Agreement 1993](History HL/rwanda/sections/4.2 Arusha Peace Agreement 1993.md)
+      - [5 The Assassination Of Presidents](History HL/rwanda/sections/5 The Assassination of Presidents.md)
+      - [6 Genocide Begins](History HL/rwanda/sections/6 Genocide Begins.md)
+      - [7 International Response](History HL/rwanda/sections/7 international response.md)
+      - [8 Impact](History HL/rwanda/sections/8 Impact.md)
+    - **themes**
+      - [Aftermath](History HL/rwanda/themes/Aftermath.md)
+      - [Genocide Participants](History HL/rwanda/themes/Genocide Participants.md)
+      - [Haby Policy To Civil War](History HL/rwanda/themes/Haby policy to civil war.md)
+      - [Refugee Crisis](History HL/rwanda/themes/Refugee Crisis.md)
+      - [Cause Of Genocide V2](History HL/rwanda/themes/cause of genocide v2.md)
+      - [Cause Of Genocide(Civil War)](History HL/rwanda/themes/cause of genocide(civil war).md)
+      - [Media Role](History HL/rwanda/themes/media role.md)
+- **Maths AA HL**
+  - [Small Tips](Maths AA HL/Small Tips.md)
+  - [Good](Maths AA HL/good.md)
+  - [Paper 3 Tips](Maths AA HL/paper 3 tips.md)
+  - [Topic 1 Number And Algebra](Maths AA HL/topic 1 number and algebra.md)
+  - [Topic 2 Function](Maths AA HL/topic 2 Function.md)
+  - [Topic 3 Trig And Vector](Maths AA HL/topic 3 trig and vector.md)
+  - [Topic 4 Statistics And Probability](Maths AA HL/topic 4 statistics and probability.md)
+  - [Topic 5 Calculus](Maths AA HL/topic 5 Calculus.md)
+  - **_resources**
+    - [Topic 3 Trig And Vector](Maths AA HL/_resources/topic 3 Trig and Vector.md)
+- **Physics SL**
+  - [1.1 Units, Significant Figures, And Measurement](Physics SL/1.1 Units, Significant Figures, and Measurement.md)
+  - [A](Physics SL/A.md)
+  - [B](Physics SL/B.md)
+  - [C](Physics SL/C.md)
+  - [D](Physics SL/D.md)
+  - [E 敌人图鉴](Physics SL/E 敌人图鉴.md)
+  - [E](Physics SL/E.md)
+  - [A3](Physics SL/a3.md)
+  - [General](Physics SL/general.md)
