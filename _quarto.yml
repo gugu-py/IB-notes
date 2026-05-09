@@ -1,0 +1,8 @@
+project:
+  type: website
+
+website:
+  title: "notes"
+format:
+  html:
+    theme: cosmo
