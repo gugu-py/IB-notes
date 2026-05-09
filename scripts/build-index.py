@@ -69,7 +69,7 @@ def append_tree(lines: list[str], path: Path, depth: int = 0) -> None:
 def build_index() -> str:
     lines = [
         "---",
-        "title: Home",
+        "title: Gugu's IB notes",
         "---",
         "",
         "# Notes Index",

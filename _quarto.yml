@@ -1,9 +1,12 @@
 project:
   type: website
+  render:
+    - README.md
+    - "*.md"
+    - "**/*.md"
   pre-render:
     - python scripts/build-index.py
   resources:
-    - README.md
     - "**/*.pdf"
 
 website:
