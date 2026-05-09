@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>paper-1 – notes</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="理解评分标准" class="level2">
+<h2 class="anchored" data-anchor-id="理解评分标准">理解评分标准</h2>
+<ol type="1">
+<li>A
+<ol type="1">
+<li>表层含义和深层含义</li>
+<li><strong>细节受众效果和语境呼应</strong></li>
+<li>结合证据，精简摘引</li>
+</ol></li>
+<li>B
+<ol type="1">
+<li>利用专业术语解构文本：文本风格和作者手法
+<ol type="1">
+<li>通过使用「。。。」作者展现了</li>
+<li>在「。。。」这句话中，「。。。」短语体现了。。。，让读者感受到。。。</li>
+</ol></li>
+<li>分析风格和手法达到的效果
+<ol type="1">
+<li>有效的，强有力的，独特的，引人深思的，etc.</li>
+</ol></li>
+</ol></li>
+<li>C
+<ol type="1">
+<li>在重要的部分包含题引的关键词</li>
+<li>保持有逻辑的组织，保有回归主题/题引的意识</li>
+<li>利用复杂的过渡句连接段落
+<ol type="1">
+<li>作者不仅有效地强化了。。。，还。。。</li>
+<li>。。。是不够的。为了。。。，作者还</li>
+<li>在塑造了。。。的基础上，作者。。。</li>
+</ol></li>
+</ol></li>
+<li>D
+<ol type="1">
+<li>使用正式专业的语言和术语</li>
+<li>正确且准确</li>
+</ol></li>
+</ol>
+</section>
+<section id="有用的短语" class="level2">
+<h2 class="anchored" data-anchor-id="有用的短语">有用的短语</h2>
+<p>表现，展现，凸显，强化，体现，表达，突出，说明</p>
+<p>采用，运用，使用，利用，借助，依托</p>
+<p><strong>形容效果</strong>：强有力的，有效的，引人共鸣的，引人深思的，富有感染力的，直击人心的，令人信服的；独特的，不落俗套的，创新的，耳目一新的，与众不同的；生动形象的，鲜明的，深刻的，精妙的，引人入胜的，自然流畅的，朴实无华的，言简意赅的，恰如其分的</p>
+<p><strong>生僻方式</strong>：语义群</p>
+<p>比喻，夸张，拟人，反复，</p>
+</section>
+<section id="分析角度" class="level2">
+<h2 class="anchored" data-anchor-id="分析角度">分析角度</h2>
+<blockquote class="blockquote">
+<p><strong><em>核心tip: 选择最重要/最有代表性的元素分析</em></strong></p>
+</blockquote>
+<p><strong>文字模态</strong>：修辞，语言风格（专业的，轻松的，幽默的，诙谐的），语法结构，意思（双关），结构（对仗，谐音，押韵，短句，长句，简单句），人称</p>
+<p><strong>图像模态</strong>：构图（黄金比例），光线，物体，空间（背景），色调，人物（动作，服饰，眼神），视觉引导线，角度 -&gt; 对比，象征</p>
+<p><strong>重要区分</strong>： - 比喻：表面相似；类比：本质相似</p>
+</section>
+<section id="分析的组织" class="level2">
+<h2 class="anchored" data-anchor-id="分析的组织">分析的组织</h2>
+<section id="全文" class="level3">
+<h3 class="anchored" data-anchor-id="全文">==全文==</h3>
+<p>一共10~12个论据，取决于分析的力道（能分析深入就尽量分析深入，胜不在多）</p>
+<p>prefer“层层递进”，但是一些文字不适用</p>
+<p>常见分法： - 理性+感性（然后再细分） - 图像+文字 - <strong>按作用，手法，受众分</strong> (当手法耦合性强的时候)</p>
+</section>
+<section id="段落内" class="level3">
+<h3 class="anchored" data-anchor-id="段落内">段落内</h3>
+<p>一个段落内不超过3个聚类/手法集群</p>
+<p>层层递进： - 语言：从字从词到句 - 修辞手法：类似的效果，打「<strong>组合技</strong>」（主修辞手法。。。，修辞手法B进一步加强。。。，修辞手法C接着拉拢XXX）</p>
+<p><strong>分析结构</strong>的两种组织方法： 1. 几句话：高度概括文字的几个部分，分析各个部分之间的关系和作用（互补关系；不同维度，受众） 2. 一个完整段落：先细节文本分析，最后统合点出结构和作用 - 例：[用词细节，语义群，画面感塑造。。。] 综上，作者通过由具体到抽象的结构，从体验到原理逻辑有效向老年人群体呈现治疗方法的效果和实际体验。</p>
+</section>
+</section>
+<section id="文体靶向疫苗" class="level2">
+<h2 class="anchored" data-anchor-id="文体靶向疫苗">文体靶向疫苗</h2>
+<section id="评论" class="level3">
+<h3 class="anchored" data-anchor-id="评论">评论</h3>
+<p>常见题材：社会问题</p>
+<p>开头常用情绪调动和归纳引入</p>
+<section id="基本概念" class="level4">
+<h4 class="anchored" data-anchor-id="基本概念">基本概念</h4>
+<p><strong>核心要素</strong>：事实，观点（有多个），<em>论点</em>（唯一，被所有事实与观点最终支持、论证的观点）</p>
+<p><strong>判断类型</strong>：价值判断（以一定的价值尺度判断事实的价值），事实判断（客观事实之间的关系）</p>
+</section>
+<section id="分析角度和元素" class="level4">
+<h4 class="anchored" data-anchor-id="分析角度和元素">分析角度和元素</h4>
+<ol type="1">
+<li>先找论点</li>
+<li>结构
+<ul>
+<li>评论论证逻辑</li>
+</ul></li>
+<li>论证方式
+<ul>
+<li>手法</li>
+<li>风格（情感化/理性化）</li>
+</ul></li>
+<li>语言（用词，句式，修辞）</li>
+<li>多重视角</li>
+</ol>
+<p><strong>论证逻辑</strong>：归纳式（从特殊到一般），演绎式（从一般到特殊），类比式（从个别到个别），归谬式（从特殊到极端）</p>
+<p><strong>论证（子）结构</strong>：并列/递进</p>
+<p><strong>论证方式</strong>：例证法​，引证法​，喻证法​，类比法​，对比法​，联系法​，归谬法​，推理法​</p>
+<p><strong>语言风格</strong>： 1. 情感化（引发共鸣） - 用词：情感色彩鲜明或暗含价值判断（触目惊心）；程度副词（极其） - 修辞手法：反问与设问、排比、反复、感叹句、对比等 - 更短的句式和更多样化的标点 - <strong>论证方式内隐</strong> 2. 理性化（客观严谨逻辑清晰） - 用词：术语，中性词，逻辑关联词 - 句式：复杂长句表达复杂、精密的思想 - 标点：相对单一 - ==论证方式外显==<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> 3. 形象化（构建画面感） - 修辞：比喻、拟人、通感、夸张、隐喻等 - 描写性的语言：细节，人物，场面，环境</p>
+<p>-&gt; [[新闻评论分析|实例]]</p>
+<p><strong>额外角度</strong>： - 追问</p>
+<ul>
+<li><p>逻辑词的功能（“事实上”，“从个人层面来说”，“从根本上说”）</p></li>
+<li><p>动词隐晦表达立场（表示vs声称）</p></li>
+<li><p>副词强化语气；限定程度</p></li>
+</ul>
+</section>
+<section id="套路结构" class="level4">
+<h4 class="anchored" data-anchor-id="套路结构">套路结构</h4>
+<ol type="1">
+<li>大逻辑结构，精确到句和段的手法（不要咬文嚼字），一条线大拉</li>
+<li>语言，精确到句和词，关注逻辑词，立场词，约束词（据悉）。三个大效果或者目的，每个目的一到两个细致论据，不要贪多</li>
+</ol>
+</section>
+</section>
+<section id="新闻说明类文字" class="level3">
+<h3 class="anchored" data-anchor-id="新闻说明类文字">新闻/说明类文字</h3>
+<section id="基本概念-1" class="level4">
+<h4 class="anchored" data-anchor-id="基本概念-1">基本概念</h4>
+<p>类型：消息，<strong>通讯</strong>，<strong>特写</strong></p>
+<p>结构： - <strong>倒金字塔</strong>或<strong>沙漏</strong> - <strong>纵式</strong>（时间顺序和逻辑顺序）和<strong>横式</strong>（多侧面拼接安排）或结合</p>
+<p>报道视角：采访了谁，引用了谁，引用了什么内容，这些内容的潜在观点 图片：关注视角和内容</p>
+</section>
+<section id="分析角度-1" class="level4">
+<h4 class="anchored" data-anchor-id="分析角度-1">分析角度</h4>
+<ol type="1">
+<li>文体（真实性，时效性，客观性，文学性）
+<ol type="1">
+<li><strong>真实性</strong>：是否有<em>文学想象</em>，采访和写作的选择，背后的目的</li>
+<li>时效性</li>
+<li><strong>客观性</strong>：
+<ul>
+<li>说明性语言（可查证），分析性语言（对原因、意义、影响的解释），判断性语言（是与非）</li>
+<li>中立用词，倾向性</li>
+<li>涉及不同立场的观点</li>
+</ul></li>
+</ol></li>
+<li>平台（官方，民媒，自媒体）</li>
+<li><strong>语境</strong>（社会，历史，文化）</li>
+<li><strong>目的</strong>（说明性/价值引导，说明、宣传、娱乐）</li>
+<li>受众：吸引特定类型受众 or 从哪些方面影响受众</li>
+<li>文本（二选一）：
+<ol type="1">
+<li>要素（结构，语言，表达方式，图片，报导视角）</li>
+<li>文体特征分析（真实性/时效性/<strong>客观性与文学性</strong>（理性与感性））</li>
+</ol></li>
+<li>是否需要改动？（结尾，optional，一般不写）</li>
+</ol>
+</section>
+<section id="平台特化" class="level4">
+<h4 class="anchored" data-anchor-id="平台特化">平台特化</h4>
+<p>官媒（官方主办）： - 生存焦虑较低，用语严肃 - 消息权威，发声谨慎 - 价值观稳定 - 稳定受众</p>
+<p>民媒（民营机构）： - 兼顾官方立场和民间立场</p>
+<p>自媒体（个人开设） - 观点尖锐 - 内容自由 - 煽动性强（紧张、愤怒、焦虑等） - 交互性强</p>
+</section>
+</section>
+<section id="广告" class="level3">
+<h3 class="anchored" data-anchor-id="广告">广告</h3>
+<section id="基本概念-2" class="level4">
+<h4 class="anchored" data-anchor-id="基本概念-2">基本概念</h4>
+<p><strong>定义</strong>：为了某种特殊需要，公开广泛传播信息</p>
+<p><strong>目的</strong>（好不好=是否实现目的）： - 强化记忆 - 重复关键信息/标志性元素-&gt;加深印象，更容易被想起 （e.g.&nbsp;旺旺） - 告知产品信息 - 产品特点，功能，优势，使用方法 -&gt; 判断是否满足需求，提供购买决策依据 (e.g.&nbsp;iPhone) - 建立品牌形象 - 展现个性，价值观，形象 -&gt; 彰显独特地位，辨识度，美誉度 (e.g.&nbsp;可口可乐)，理性 - 引起情感共鸣 - 表现亲情，友情，爱情，梦想，怀旧等 -&gt; 好感和认同感 (e.g.&nbsp;华为)，感性</p>
+</section>
+<section id="图文类广告要素分析" class="level4">
+<h4 class="anchored" data-anchor-id="图文类广告要素分析">图文类广告要素分析</h4>
+<p><strong>文字</strong>： 1. 标点 2. 用词（色彩词、叠词、动词、副词、称谓词、粗口、方言、成语、俚语……） 3. 句式（长句、短句、整句、短句、反问、设问、感叹、祈使句……） 4. 语体色彩（褒义、贬义、口语、书面、文言、白话……） 5. 修辞（象征、对比、双关、用典、排比、反复……）</p>
+<p><strong>图片</strong>： 1. 构图 2. 色彩 3. 亮度：明暗 4. 线条：繁简/刚柔/粗细 5. 细节：人物表情动作、场景的时间地点等细节、道具等</p>
+<p><strong>视觉动线</strong> - 字号、粗细 -&gt; 视觉引导，由最大最粗到次大此粗 - 图文同时出现，文字先吸引注意力 - 最熟悉到次熟悉（语言/元素）</p>
+<p><strong>设计原则</strong>： - 对比（重要的用粗体或大尺寸） - 亲密（对信息分组，相关的放一起） - 对齐 - 重复（元素）</p>
+</section>
+<section id="亚种" class="level4">
+<h4 class="anchored" data-anchor-id="亚种">亚种</h4>
+<p><strong>一、描述性图片和文字：</strong><br>
+这类广告通过直观的图片和简洁的文字来描述<strong>产品或服务的外观、功能、特点</strong>等。它们以清晰、具体的形象和准确的文字描述来吸引潜在消费者的注意力，让人们对产品产生兴趣。</p>
+<p><strong>二、情感性图片和文字：</strong><br>
+这类广告侧重于通过图片和文字来唤起观众的情感和情绪反应。它们通过精心选择的图片和富有感染力的文字，试图引发观众的情感共鸣，让观众与广告产生情感上的联系，并使其产生购买欲望。</p>
+<p><strong>三、创意性图片和文字：</strong><br>
+这类广告通过独特、创意的图片和文字来吸引观众的眼球。它们采用非传统的形象和文字表达方式，以引起观众的好奇心和兴趣。这种类型的广告常常给人留下深刻的印象，有助于提高品牌的知名度和认可度.</p>
+</section>
+<section id="特殊角度" class="level4">
+<h4 class="anchored" data-anchor-id="特殊角度">特殊角度</h4>
+<p>用典/玩梗和语境</p>
+<p>躯干形态（弯腰-&gt;辛苦）</p>
+<p>阴影</p>
+<p>-&gt; [[hw/paper1 广告练习 v2|paper1 广告练习 实例]] -&gt; [[广告/分析方法|视频类广告要素分析]]</p>
+</section>
+</section>
+<section id="怪题主旨含混不知所云" class="level3">
+<h3 class="anchored" data-anchor-id="怪题主旨含混不知所云">怪题（主旨含混，不知所云）</h3>
+<p>碎片化结构反映XXXX的多样性与流动性。</p>
+<p>仔细观察逻辑结构，总是可以发现一些提示和蹊跷</p>
+<p>作者是不是偷偷藏了自己的倾向或者价值观？</p>
+<p>作者选择这些内容，有何意味？</p>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>ask gpt: 新闻评论中”论证方式外显”是什么意思?<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

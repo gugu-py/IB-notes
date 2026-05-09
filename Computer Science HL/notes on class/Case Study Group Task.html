@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>case-study-group-task – notes</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="phase-1-pre-engagement-interactions" class="level2">
+<h2 class="anchored" data-anchor-id="phase-1-pre-engagement-interactions"><strong>Phase 1: Pre-Engagement Interactions</strong></h2>
+<blockquote class="blockquote">
+<p>Which systems should be in scope (EHRs, IoT medical devices, communications)?</p>
+</blockquote>
+<section id="raw" class="level3">
+<h3 class="anchored" data-anchor-id="raw">raw</h3>
+<p>https://www.gethealthie.com/glossary/it-infrastructure</p>
+<p>electronic health record (EHR). EHRs are used by healthcare providers to store and exchange patient health information. EHRs can be used by providers to track patient health information over time, to share information with other providers, and to exchange information with patients.</p>
+<p>health information exchange (HIE). HIEs are used to exchange patient health information between different healthcare providers. HIEs can be used to share information between providers in different locations, to share information between providers in different care settings, or to exchange information between providers and patients.</p>
+<p>clinical decision support systems, patient portals, and telehealth systems. Clinical decision support systems are used to help healthcare providers make better decisions about patient care. Patient portals are used to give patients access to their own health information. Telehealth systems are used to provide healthcare services to patients at a distance.</p>
+<p>https://kodjin.com/blog/it-infrastructure-in-healthcare/</p>
+<ul>
+<li><strong>Content Management Systems (CMS):</strong> enable the creation, management, and exchange of digital content.</li>
+<li><strong>Enterprise Resource Planning (ERP):</strong> software that integrates and manages essential business processes.</li>
+<li><strong>Web Servers:</strong> facilitate seamless data exchange and quick resource access.</li>
+</ul>
+<p>https://securithings.com/hospital-physical-security/iot-devices-in-healthcare/ IoTs</p>
+<p>==from those, we select the following==</p>
+<p>sort by seriousness</p>
+</section>
+<section id="electronic-health-record-ehr" class="level3">
+<h3 class="anchored" data-anchor-id="electronic-health-record-ehr">==Electronic Health Record (EHR)==</h3>
+<p><strong>Reason:</strong> EHRs store and exchange patient health information. They are used to track patient information over time, share between providers, and with patients. Because they hold the most sensitive regulated data (PHI), compromise would cause maximum impact (privacy breach, compliance violation, patient safety).</p>
+</section>
+<section id="health-information-exchange-hie" class="level3">
+<h3 class="anchored" data-anchor-id="health-information-exchange-hie">==Health Information Exchange (HIE)==</h3>
+<p><strong>Reason:</strong> HIEs exchange patient information between different providers, care settings, and locations. They act as aggregation and transmission centers, so an attack could affect multiple organizations and amplify risk.</p>
+</section>
+<section id="patient-portals" class="level3">
+<h3 class="anchored" data-anchor-id="patient-portals">==Patient Portals==</h3>
+<p><strong>Reason:</strong> Patient portals provide patients direct access to their health information. They are externally accessible, making them high-value targets for credential theft, identity fraud, and unauthorized access to PHI.</p>
+</section>
+<section id="telehealth-systems" class="level3">
+<h3 class="anchored" data-anchor-id="telehealth-systems">Telehealth Systems</h3>
+<p><strong>Reason:</strong> Telehealth systems provide healthcare services at a distance. They involve real-time video/audio sessions with sensitive clinical discussions. Attacks could compromise confidentiality and integrity of consultations.</p>
+</section>
+<section id="clinical-decision-support-systems-cdss" class="level3">
+<h3 class="anchored" data-anchor-id="clinical-decision-support-systems-cdss">Clinical Decision Support Systems (CDSS)</h3>
+<p><strong>Reason:</strong> CDSS help providers make better decisions about patient care. Manipulation could mislead clinicians, creating patient safety risks even if data is intact. Integrity is more critical than confidentiality here.</p>
+</section>
+<section id="iot-medical-devices" class="level3">
+<h3 class="anchored" data-anchor-id="iot-medical-devices">IoT Medical Devices</h3>
+<p><strong>Reason:</strong> IoT medical devices (infusion pumps, monitors, etc.) are increasingly network-connected. Vulnerabilities could allow attackers to interfere with device operations or use them as pivot points. Impact is high but depends on device availability and test feasibility.</p>
+</section>
+<section id="communications" class="level3">
+<h3 class="anchored" data-anchor-id="communications">Communications</h3>
+<p><strong>Reason:</strong> Communications platforms (messaging, VoIP, clinician collaboration) carry sensitive operational and clinical metadata. While breaches may expose schedules or conversations, the direct impact is generally lower than EHR/HIE but still relevant for phishing or impersonation.</p>
+</section>
+<section id="web-servers" class="level3">
+<h3 class="anchored" data-anchor-id="web-servers">Web Servers</h3>
+<p><strong>Reason:</strong> Web servers facilitate seamless data exchange and quick resource access. They are common attack surfaces and need hardening, but they typically act as entry points rather than core PHI systems.</p>
+</section>
+<section id="enterprise-resource-planning-erp" class="level3">
+<h3 class="anchored" data-anchor-id="enterprise-resource-planning-erp">Enterprise Resource Planning (ERP)</h3>
+<p><strong>Reason:</strong> ERP integrates business processes like HR, finance, and supply chain. Attacks may cause financial fraud or operational disruption but don’t directly compromise clinical data.</p>
+</section>
+<section id="content-management-systems-cms" class="level3">
+<h3 class="anchored" data-anchor-id="content-management-systems-cms">==Content Management Systems (CMS)==</h3>
+<p><strong>Reason:</strong> CMS enable creation and exchange of digital content. While they may expose credentials or be used as phishing platforms, they are less critical to clinical operations compared to EHR/HIE.</p>
+<p>reference: https://www.gethealthie.com/glossary/it-infrastructure https://kodjin.com/blog/it-infrastructure-in-healthcare/ https://securithings.com/hospital-physical-security/iot-devices-in-healthcare/</p>
+</section>
+</section>
+<section id="phase-2-intelligence-gathering" class="level2">
+<h2 class="anchored" data-anchor-id="phase-2-intelligence-gathering">Phase 2 : Intelligence Gathering</h2>
+<p>Hospitals maintain high transparency about faculty through websites, LinkedIn, research publications, and social media. While this supports trust and collaboration, it also supplies attackers with intelligence that can be weaponized for <strong>social engineering</strong>.</p>
+<section id="osint-sources-and-what-attackers-learn" class="level3">
+<h3 class="anchored" data-anchor-id="osint-sources-and-what-attackers-learn">OSINT Sources and What Attackers Learn</h3>
+<ul>
+<li><p><strong>LinkedIn &amp; Job Boards</strong> → Staff roles, reporting lines, email patterns, and technology in use.</p></li>
+<li><p><strong>Hospital Website &amp; Publications</strong> → Names, contact details, internal structure, metadata from documents.</p></li>
+<li><p><strong>Social Media</strong> → Personal interests, schedules, casual mentions of system changes or vendors.</p></li>
+</ul>
+</section>
+<section id="key-risk" class="level3">
+<h3 class="anchored" data-anchor-id="key-risk">Key Risk</h3>
+<p>OSINT transforms public transparency into actionable intelligence, lowering the barrier for attackers to convincingly <strong>impersonate trusted individuals</strong> and manipulate staff into divulging credentials, opening attachments, or granting access.</p>
+</section>
+</section>
+<section id="phase-3-threat-modelling" class="level2">
+<h2 class="anchored" data-anchor-id="phase-3-threat-modelling"><strong>Phase 3: Threat Modelling</strong></h2>
+<blockquote class="blockquote">
+<p>How could attackers use social engineering here? (phishing, vishing, pretexting). What are their capabilities and intentions?</p>
+</blockquote>
+<p>==source and citation==</p>
+<section id="phishing-email-based-attacks" class="level3">
+<h3 class="anchored" data-anchor-id="phishing-email-based-attacks">1. <strong>Phishing (email-based attacks)</strong></h3>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li><p>Crafting lookalike emails (spoofed domains, typosquatting, stolen logos/branding).</p></li>
+<li><p>Embedding malicious links that mimic patient portals, telehealth logins, or EHR vendor pages.</p></li>
+<li><p>Using malware-laced attachments (malicious PDFs or invoices tied to ERP).</p></li>
+<li><p>Credential-harvesting landing pages for portals or VPNs.</p></li>
+</ul>
+<p><strong>Intentions</strong></p>
+<ul>
+<li><p><strong>Credential theft</strong>: Steal provider or patient logins for EHRs, HIE portals, or telehealth systems.</p></li>
+<li><p><strong>Initial foothold</strong>: Deliver malware (keyloggers, ransomware) into hospital networks.</p></li>
+<li><p><strong>Lateral movement</strong>: From one compromised account (say, a nurse’s) pivot into systems with higher privileges.</p></li>
+<li><p><strong>Data exfiltration</strong>: PHI, billing, or scheduling data for resale or extortion.</p></li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li><p>Fake “urgent lab results” email with a link to a malicious EHR login page.</p></li>
+<li><p>“Password expiry” notice redirecting staff to an attacker’s patient portal clone.</p></li>
+<li><p>Invoices disguised as ERP purchase orders containing malware.</p></li>
+</ul>
+</section>
+<section id="vishing-voice-based-attacks" class="level3">
+<h3 class="anchored" data-anchor-id="vishing-voice-based-attacks">2. <strong>Vishing (voice-based attacks)</strong></h3>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li><p>Caller ID spoofing to impersonate IT helpdesk, vendors, or clinical supervisors.</p></li>
+<li><p>Using social pressure and urgency (“we need to fix your EHR login now or your account will be suspended”).</p></li>
+<li><p>Exploiting confusion during emergencies or shift changes.</p></li>
+</ul>
+<p><strong>Intentions</strong></p>
+<ul>
+<li><p><strong>Harvest MFA tokens</strong>: Trick clinicians into reading back SMS/voice codes to complete logins.</p></li>
+<li><p><strong>Install remote software</strong>: Convince staff to run remote desktop clients (“support tools”) for fake troubleshooting.</p></li>
+<li><p><strong>Bypass policies</strong>: Persuade helpdesk staff to reset credentials or disable security controls.</p></li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li><p>Attacker poses as the hospital IT team: “We noticed unusual activity on your patient portal account; please verify your MFA code.”</p></li>
+<li><p>Calls to a receptionist: “This is Dr.&nbsp;Smith from another clinic — I urgently need access to patient records, can you provide the login?”</p></li>
+</ul>
+</section>
+<section id="pretexting-fabricated-scenarios-for-trust" class="level3">
+<h3 class="anchored" data-anchor-id="pretexting-fabricated-scenarios-for-trust">3. <strong>Pretexting (fabricated scenarios for trust)</strong></h3>
+<p><strong>Capabilities</strong></p>
+<ul>
+<li><p>Building convincing backstories with publicly available info (LinkedIn, hospital staff directories, press releases).</p></li>
+<li><p>Leveraging stolen PHI from previous breaches to sound legitimate.</p></li>
+<li><p>Tailoring communication to roles (billing clerk, clinician, biomedical engineer).</p></li>
+</ul>
+<p><strong>Intentions</strong></p>
+<ul>
+<li><p><strong>Privilege escalation</strong>: Trick staff into granting extra access rights (“I’m from the compliance audit team, need admin rights to export logs”).</p></li>
+<li><p><strong>Physical access</strong>: Impersonate vendor/maintenance staff to access IoT devices or servers.</p></li>
+<li><p><strong>Supply chain infiltration</strong>: Pose as external partners (labs, insurers) to request secure data transfers.</p></li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li><p>Attacker emails IT ops claiming to be from an EHR vendor needing urgent access for a “security patch.”</p></li>
+<li><p>Fake biomedical engineer pretext to access IoT medical devices in restricted areas.</p></li>
+<li><p>Impersonating a regulator requesting PHI samples for an “audit.”</p></li>
+</ul>
+</section>
+<section id="attacker-profile-capabilities-intentions" class="level3">
+<h3 class="anchored" data-anchor-id="attacker-profile-capabilities-intentions">4. <strong>Attacker profile: capabilities &amp; intentions</strong></h3>
+<ul>
+<li><p><strong>Capabilities</strong>:</p>
+<ul>
+<li><p>Access to phishing kits (ready-made EHR/portal clones).</p></li>
+<li><p>Caller ID spoofing tools and AI voice cloning.</p></li>
+<li><p>Data mining skills (scraping staff lists, press releases, social media).</p></li>
+<li><p>Familiarity with healthcare terminology and workflows to sound authentic.</p></li>
+</ul></li>
+<li><p><strong>Intentions</strong>:</p>
+<ul>
+<li><p><strong>Financial gain</strong>: Sell PHI on dark markets, conduct insurance fraud, ransomware campaigns.</p></li>
+<li><p><strong>Espionage / competitive intelligence</strong>: State-backed actors stealing research/clinical trial data.</p></li>
+<li><p><strong>Disruption</strong>: Criminals (or hacktivists) targeting hospitals for maximum visibility.</p></li>
+<li><p><strong>Patient harm</strong>: Rare, but altering CDSS or IoT devices to cause safety events.</p></li>
+</ul></li>
+</ul>
+<p>reference: https://www.hhs.gov/hipaa/for-professionals/security/guidance/cybersecurity-newsletter-october-2024/index.html https://www.paubox.com/blog/phishing-scams-used-to-attack-healthcare-organizations https://405d.hhs.gov/Documents/Five-Threat-Series-Email-Phishing-405d-R.pdf</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

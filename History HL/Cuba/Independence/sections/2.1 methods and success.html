@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>methods-and-success – notes</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="timeline" class="level2">
+<h2 class="anchored" data-anchor-id="timeline">TIMELINE</h2>
+<p><strong>1823</strong> <strong>Dec:</strong> US announces the Monroe Doctrine.</p>
+<p><strong>1843</strong> <strong>Mar:</strong> La Escalera Rebellion in Cuba.</p>
+<p><strong>1848</strong> US offers Spain $100 million for Cuba.</p>
+<p><strong>1854</strong> US offers Spain $130 million for Cuba.</p>
+<p><strong>1868</strong> <strong>Oct:</strong> Carlos Manuel de Céspedes begins First Independence War; Grito de Yara.</p>
+<p><strong>1869</strong> <strong>Apr:</strong> Rebel Constituent Assembly proclaims ‘Republic of Cuba in Arms’; Céspedes elected president.</p>
+<p><strong>1873</strong> Céspedes deposed as president.</p>
+<p><strong>1874</strong> <strong>Feb:</strong> Céspedes killed by Spanish troops.</p>
+<p><strong>1877</strong> <strong>Dec:</strong> Estrada captured.</p>
+<p><strong>1878</strong> <strong>Feb:</strong> Pact of Zanjón.<br>
+<strong>Mar:</strong> Protest of Baraguá.</p>
+<p><strong>1879</strong> <strong>Aug:</strong> Guerra Chiquita.</p>
+<p><strong>1892</strong> <strong>Jan:</strong> Martí forms the Cuban Revolutionary Party.</p>
+<p><strong>1895</strong> <strong>Feb:</strong> Start of Second Independence War.<br>
+<strong>Mar:</strong> Rebels issue their Manifesto of Montecristo.<br>
+<strong>May:</strong> Martí killed by Spanish troops.<br>
+<strong>Sept:</strong> Rebel Constitution announced.</p>
+<p><strong>1896</strong> <strong>Oct:</strong> Valeriano Weyler orders first concentration camps set up.<br>
+<strong>Dec:</strong> Antonio Maceo and Francisco Gómez killed by Spanish troops.</p>
+<p><strong>1898</strong> <strong>Feb:</strong> The Maine incident.<br>
+<strong>Apr:</strong> US declares war on Spain; Teller Amendment.<br>
+<strong>Dec:</strong> Treaty of Paris ends Spanish–American War.</p>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<ul>
+<li><p>After 1840, Cuba experienced some more serious armed uprisings — the two most important ones, in 1868 and 1895 respectively, were clearly independence movements.</p></li>
+<li><p>From 1848, the US made offers to Spain for the purchase of Cuba — but Spain refused. This led some politicians in the US to consider the annexation of Cuba, which was increasingly seen as being important for US interests.</p></li>
+<li><p>The first serious armed uprising for Cuban independence broke out in 1868 and was at first led by ==Carlos Manuel de Céspedes==. This First War of Independence lasted ten years, but ended in defeat in 1878. One reason for this was divisions over aims between rebel leaders.</p></li>
+<li><p>During the 1880s, ==José Martí== began to organize another armed rebellion for Cuban independence. To help in this, he formed the Cuban Revolutionary Party in 1892.</p></li>
+<li><p>The Second War of Independence broke out in 1895 and, although Martí was killed early on, by 1898 the rebels’ Liberation Army seemed on the point of total victory.</p></li>
+<li><p>However, in that year, the US decided to intervene and declared war on Spain. After Spain’s defeat in the short Spanish–American War, the US took over Spain’s remaining colonies in the Americas — including Cuba.</p></li>
+</ul>
+<hr>
+</section>
+<section id="rebels" class="level2">
+<h2 class="anchored" data-anchor-id="rebels">Rebels</h2>
+<section id="la-escalera-rebellion-18434" class="level3">
+<h3 class="anchored" data-anchor-id="la-escalera-rebellion-18434">La Escalera Rebellion, 1843–4</h3>
+<p>It was a joint rebellion of <strong>slaves and ‘free people of colour’</strong>, and some of their leaders believed they would have Britain’s support.</p>
+<p><strong>aim</strong>: This rebellion was essentially one of blacks and mulattos wanting to end slavery and achieve equal rights, rather than a clear struggle for Cuban independence.</p>
+<p>The rebellion <strong>spread quickly</strong> across western Cuba. One of the uprisings, in November 1843, took place in Matanzas province — and was led by a black female slave known as ==<strong>‘La Negra Carlota’</strong>==.</p>
+<p><strong>Method</strong>: Guerrilla Tactics; The Dundun drum to convey commands; direct assult</p>
+<p>Cuba’s captain-general, ==Leopoldo O’Donnell==, and the ==Comision Militar== quickly <strong>suppressed from January to March 1844</strong> the rebellion.</p>
+<p><strong>Outcome</strong>: The Cuban authorities then exiled all free blacks not born in Cuba — as O’Donnell assumed they had stirred up the black slaves.</p>
+<p><strong>Significance</strong>: This rebellion was the most <strong>significant</strong> one between Aponte’s 1812 rebellion, and the First War of Independence that began in 1868.</p>
+</section>
+<section id="the-first-war-of-independence-186878" class="level3">
+<h3 class="anchored" data-anchor-id="the-first-war-of-independence-186878">The First War of Independence, 1868–78</h3>
+<p>also known as the Ten Years’ War.</p>
+<p><strong>Origin</strong>: began in the east of Cuba, where there were <strong>fewer railways and roads</strong> — making it more difficult for the Spanish authorities to transport troops to deal with any rebellion. -&gt; <strong>more prepared to take armed action</strong>, centred on the town of Bayamo, in Oriente province.</p>
+<section id="early-actions" class="level4">
+<h4 class="anchored" data-anchor-id="early-actions">Early actions</h4>
+<p>Their main leaders were <strong>criollos</strong>, and included ==<strong>Carlos Manuel de Céspedes</strong>==, Salvador Cisneros Betancourt, Ignacio Agramonte and Francisco Vicente Aguilera.</p>
+<p>During the summer of 1868, the plotters organised a widespread <strong>refusal to pay taxes</strong>, while also <strong>spreading independence literature</strong> in the region, and trying to <strong>get support from pro-ref</strong>orm Cubans in the west for an independence rebellion.</p>
+<section id="early-start" class="level5">
+<h5 class="anchored" data-anchor-id="early-start">Early Start</h5>
+<p>Although <strong>Céspedes planned in July 1868</strong> the rebellion to begin, the <strong>majority decided on December</strong>. However, rumours that the authorities in Havana had discovered their plot and were about to crush it — led <strong>Céspedes to begin the revolt on his own plantation on 10 October</strong>. There, he freed all his slaves and announced the independence of Cuba.</p>
+<p><em>Response</em>: Cuba captain-general, ==General Francisco Lersundi y Hormaechea==, <strong>took little action</strong> early on.</p>
+</section>
+<section id="success-and-joining-people" class="level5">
+<h5 class="anchored" data-anchor-id="success-and-joining-people">Success and joining people</h5>
+<p>On 18 October, Céspedes was able to capture the town of Bayamo. He then <strong>officially declared the independence of Cuba</strong> in what became known as the <strong>Grito de Yara</strong> (Cry of Yara) — the ‘cry’ referred to the shout that had launched the independence movements in Latin America in the 1820s.</p>
+<p><strong>Joining people</strong>: When news of this spread, <strong>other risings against Spain broke out</strong> in the eastern provinces of Oriente and Camaguey. In addition, several younger reformists in Havana decided to join him. By early 1869, the colonial authorities were faced with a rapidly expanding rebellion that lasted for ten years.</p>
+<p><em>Response</em>: Spain sent more than ==100,000 troops to crush this rebellion== — the insurgents were helped by the <strong>support from peasants</strong>, who had a good knowledge of the local landscape. <strong>This enabled them to</strong>: move quickly through the countryside, have forewarning of troop movements, conceal their forces and pick favourable sites for combat.</p>
+<p><strong>The rebels were more used to tropical climate</strong>. As a result, Cuba experienced an increasingly bitter ten years’ war.</p>
+</section>
+</section>
+<section id="spanish-tactics" class="level4">
+<h4 class="anchored" data-anchor-id="spanish-tactics">Spanish Tactics</h4>
+<section id="trocha-militar-trench" class="level5">
+<h5 class="anchored" data-anchor-id="trocha-militar-trench">trocha militar (Trench)</h5>
+<p>==Lersundi== ordered the building of a defensive military trench, more than 50km (30 miles) long — the <strong>trocha militar</strong> — across the middle of the island, from Moron in the north to Jucaro in the south. It was <strong>built between 1869 and 1872</strong>, by black slaves and Chinese coolies, and was defended by a line of more than forty forts.</p>
+<p><strong>aim</strong>: restrict the rebel areas to the east and centre of Cuba, and so preventing any serious unrest in the west</p>
+</section>
+<section id="people-removal-of-rural-areas" class="level5">
+<h5 class="anchored" data-anchor-id="people-removal-of-rural-areas">People Removal of rural areas</h5>
+<p><strong>aim</strong>: to counter the rebels’ guerrilla activities</p>
+<p>Lersundi also ordered the measure: - <strong>forcible removal of people from rural</strong> areas into concentration camps and towns controlled by the government; - young men who were found outside their home area were arrested and executed</p>
+<p><strong>why effective</strong>: because of divisions within the rebel leadership about whether to spread the rebellion to the west. For, in 1875, when ==<strong>Máximo Gómez</strong>== was finally allowed to take forces to the west, he crossed it with little difficulty.</p>
+</section>
+</section>
+<section id="division-within-rebel" class="level4">
+<h4 class="anchored" data-anchor-id="division-within-rebel">Division within rebel</h4>
+<p><strong><em>It was these divisions, as much as the military campaigns waged by Spanish forces, which ultimately led to the failure of this First Independence War.</em></strong> These differences were a combination of regionalism, conflicting class interests, arguments over military strategy and emerging racial and nationalist tensions.</p>
+<section id="rebel-assembly" class="level5">
+<h5 class="anchored" data-anchor-id="rebel-assembly">1869 rebel assembly</h5>
+<p>In April 1869, a rebel Constituent Assembly met in Guaimaro, officially proclaimed the birth of the new ==‘Republic of Cuba in Arms’== and drew up a liberal constitution. But it <strong>failed to reach a compromise over the slavery issue</strong>: it stated that all inhabitants of the new republic were free — but that the freed slaves should remain as paid employees on the plantations.</p>
+<p>The meeting also <strong>called for annexation by the US</strong>, and <strong>set up a system</strong> by which military leaders could not act without the approval of the civilian leadership.</p>
+<p><strong>Conflicts and killings within</strong>: This latter move was suggested by ==Ignacio Agramonte== who — like several others — had begun to <strong>worry about the authoritarian tendencies</strong> being shown by ==Céspedes==. In 1873, Céspedes was deposed as president and briefly replaced by Betancourt. In February 1874, Céspedes was killed in a skirmish with Spanish troops and in 1875, ==Tomás Estrada Palma== became the new president of the rebel republic.</p>
+<p><strong>Consequence</strong>: By then, many of the early leaders — drawn mostly from Cuba’s criollo élites — were either dead or in exile. Meanwhile, <strong>younger and more radical leaders</strong> had become military leaders: these included the Dominican ==<strong>Máximo Gómez</strong>== and the Cuban ==<strong>mulatto Antonio Maceo</strong>==.</p>
+</section>
+<section id="after-1876-more-disagreement-and-worse-situation" class="level5">
+<h5 class="anchored" data-anchor-id="after-1876-more-disagreement-and-worse-situation">after 1876, more disagreement and worse situation</h5>
+<p><strong>funds from Cuban exiles in the US began to dry up</strong> when the rebel agenda became more radical;</p>
+<p>while, after 1876, the <strong>restoration of political peace in Spain</strong> meant the Spanish authorities in Cuba could once again concentrate on defeating the rebels.</p>
+<section id="disagreement-between-new-military-leaders-and-criollo-political-leaders" class="level6">
+<h6 class="anchored" data-anchor-id="disagreement-between-new-military-leaders-and-criollo-political-leaders">Disagreement between new military leaders and criollo political leaders</h6>
+<p>The new military leaders of the rebel forces want to <strong>fight wars in the wealthier western regions of Cuba</strong>. - They argued that, by destroying the region’s many sugar mills, they would simultaneously deprive the Spanish administration of vital funds and leave thousands of slaves and peasants free to join the struggle for independence. In this war, they believed Spain would soon be forced to give independence to Cuba. This was <strong>opposed by the criollo political leaders</strong> - they feared this would alienate the peninsulares who owned most of the big sugar plantations in the west, and who opposed independence.</p>
+<p><strong>Consequence</strong>: most ==rebel military leaders lost power==, either: - removed from their commands (e.g.&nbsp;<strong>Gómez</strong> was deprived of his command) - resigned in the face of constant interference from the civilian leaders -&gt; the rebels <strong>failed to make any significant breakthrough</strong>, and a stalemate soon developed.</p>
+</section>
+</section>
+</section>
+<section id="end-of-war" class="level4">
+<h4 class="anchored" data-anchor-id="end-of-war">End of War</h4>
+<p>The newly appointed captain-general in Cuba, ==General Arsenio Martínez-Campos y Antón==, took advantage of these divisions within rebel ranks, and promised reforms and an amnesty.</p>
+<p>In December 1877, <strong>Estrada was captured and Gómez called for a ceasefire</strong>. The war was finally ended in February 1878 by the ==<strong>Pact of Zanjón</strong>==.</p>
+<p><strong>Outcome</strong>: As well as granting an <strong>amnesty to all rebels</strong>, it gave Cuba <strong>limited autonomy rights</strong> and also <strong>freed all slaves and Chinese</strong> who had fought in the rebel Liberator Army.</p>
+<p><strong>Refuse to cease</strong>: Led by ==<strong>Antonio Maceo</strong>==, they rejected the treaty at Baragua in March 1878 and <strong>announced intention of continuing the independence war.</strong> - <strong>Outcome</strong>: with most rebels having abandoned the struggle, Maceo’s ==‘Protest of Baragua’== had limited impact, and the remaining rebel forces were eventually forced to <strong>give up and sign the treaty</strong> in May 1878 — <strong>Gómez, Maceo and several other leaders then went into exile</strong>. - Despite a short-lived uprising in August 1879 — known as the ==<strong>Guerra Chiquita</strong>== (Little War) — <strong>no other rebel break out until 1895</strong>.</p>
+</section>
+</section>
+<section id="the-second-war-of-independence-1895-8" class="level3">
+<h3 class="anchored" data-anchor-id="the-second-war-of-independence-1895-8">The Second War of Independence, 1895-8</h3>
+<p><strong>main leaders</strong>: <strong>==Jose Marti==</strong> and ==Maximo Gomez==</p>
+<section id="early-actions-1" class="level4">
+<h4 class="anchored" data-anchor-id="early-actions-1">Early actions</h4>
+<p>1st April, 1895, <strong>José Martí</strong> and <strong>Máximo Gómez</strong>, landed with a small band of revolutionaries on the southern coast of Cuba. At the same time, ==<strong>Antonio Maceo</strong>== — and his brother, José — landed with a small force on the north coast of Oriente province, to support the February uprising.</p>
+<p>19 May, <strong>Martí was killed</strong> in a Spanish ambush. - -&gt; ==<strong>Gómez</strong>== and <strong>Maceo</strong> organised a revolutionary government meeting the need for <strong>military leaders to have more independence</strong>: - In September 1895, rebel leaders formed a constituent assembly which then approved a constitution. - <strong>Gómez</strong> and <strong>Maceo</strong> were able to get this to include a clause that made it clear that the civilian authorities could only intervene in military operations if ‘absolutely necessary’ to achieve important political ends. - The constituent assembly then chose <strong>Salvador Cisneros Betancourt</strong>, a wealthy aristocrat who had fought in the First Independence War as president; - while <strong>Tomás Estrada Palma</strong> (the last president of the Republic in 1878) was appointed as the foreign representative of the ‘Republic in Arms’. - Gómez was then appointed as commander-in-chief, with Maceo as second in command.</p>
+<p>The rebellion <strong>spread rapidly during 1895</strong>. By the end of the year, <strong>Gómez</strong> and <strong>Maceo</strong> commanded a force of more than 30,000 rebels — 80 per cent of them were black, and were referred to by white Spanish troops as the <strong>mambises</strong>. (==Former slave support==).</p>
+<p><strong>Divisions among rebel leaders</strong>: these were over the question of US involvement, and whether the rebel forces should take the war into the rich sugar lands of central and western Cuba. -&gt; <strong>Gómez</strong> and <strong>Maceo</strong> crossed ==the old <strong>trocha</strong> line== in October 1895 and, by the end of the year, their forces were threatening Matanzas.</p>
+<p>==<strong>la tea</strong> (torch or firelighter)==: strategy of burning ‘everything that could provide income to the enemy’. many cane fields, mills and plantation houses were set on fire.</p>
+<p>By January 1896, rebel forces under <strong>Gómez</strong> marched to the outskirts of Havana itself, proving this war of independence to be much more successful than the first one.</p>
+<p><strong>Response</strong>: <strong>Martínez-Campos</strong>, who refused to resort to severe repression of the civilian population, resigned as captain-general and returned to Spain.</p>
+</section>
+<section id="spannish-repression" class="level4">
+<h4 class="anchored" data-anchor-id="spannish-repression">Spannish Repression</h4>
+<p>New captain-general: General ==<strong>Valeriano Weyler</strong>==. Unlike his predecessor, he was more than prepared to <strong>impose a harsh repression</strong> and to <strong>follow a scorched-earth policy</strong> in order to keep Cuba for Spain.</p>
+<section id="push-to-east" class="level5">
+<h5 class="anchored" data-anchor-id="push-to-east">Push to east</h5>
+<p>Weyler was determined to push the rebel forces back to the east, behind the <strong>trocha</strong> constructed during the First Independence War. This was strengthened, and he also built a new one west of Havana, from Mariel to Majana. -&gt; His actions <strong>forced the rebels to fight in the open</strong>, and ==Maceo’s== forces <strong>suffered many casualties</strong> in February 1896 as they tried to join up with ==<strong>Gómez’s</strong>== troops.</p>
+<p>Soon, Weyler had more than 60,000 troops at his disposal, and he also <strong>set up a communications system</strong> to give advance warning of rebel troop movements.</p>
+<p><strong>Outcome</strong>: Nonetheless, <strong>Maceo was able to join up with Gómez</strong>, and in March the rebel forces received fresh weapons delivered by ==<strong>Calixto García</strong>==, who then took command of the entire eastern region.</p>
+</section>
+<section id="concentration-camps-and-strategic-hamlets" class="level5">
+<h5 class="anchored" data-anchor-id="concentration-camps-and-strategic-hamlets">Concentration camps and strategic hamlets</h5>
+<p>To make full use of <strong>recontrado</strong> method of intimidating and controlling the civilian population: - the <strong>forcible removal of the populations</strong> from entire towns and villages in those areas where the rebels were active. - these civilians would then be concentrated (<strong>reconcentracion</strong>) in centres that could be defended easily by his troops. -&gt; <strong>deprive the rebels of support and food</strong>. - Ideally, these new population centres would be provided with food grown in special zones of cultivation. However, if this was not possible, then Weyler was prepared to accept that these <strong>reconcentrados might starve</strong>.</p>
+<p>He also insisted that <strong>the entire population had to be registered</strong> — those refusing military orders were found guilty of treason and executed. The first concentration orders were issued in October 1896, in the western area of Pinar del Rio, where Maceo’s forces were still active. -&gt; However, his harsh methods were often <strong>unsuccessful</strong> as many civilians, rather than passively accept possible disease or even starvation in the concentration camps, decided to <strong>join the rebels in the mountains</strong>.</p>
+</section>
+</section>
+<section id="rebel-on-defensive" class="level4">
+<h4 class="anchored" data-anchor-id="rebel-on-defensive">Rebel on Defensive</h4>
+<section id="inner-conflicts-and-loss" class="level5">
+<h5 class="anchored" data-anchor-id="inner-conflicts-and-loss">Inner Conflicts and Loss</h5>
+<p><strong>Problem faced</strong>: - the tactic of ==<strong>la tea</strong>==, which increasingly <strong>angered the sugar and coffee plantation owners</strong>. - Civilians opposed Gómez’s promotion of lower-middle-class and black individuals to officer roles based on military skill (80% black, 1895), <strong>favoring the appointment of white professionals regardless of experience</strong>. To address the political tension, Gómez summoned Maceo to the east for support.</p>
+<p>December 1896, ==Maceo==’s forces managed to evade Weyler’s new <strong>trocha</strong> and established his camp outside Havana, but he was <strong>surprised by a larger Spanish force</strong>, and was <strong>killed in a small skirmish</strong> along with Gómez’s son. -&gt; <strong>Maceo’s death was a serious loss to the rebels</strong> — not only was he an extremely able military leader, but he was also very popular. However, the shock of Maceo’s death led the civilian leaders to leave Gómez’s military independence intact.</p>
+</section>
+<section id="spain-follows-up-attacks-countered-by-rebel" class="level5">
+<h5 class="anchored" data-anchor-id="spain-follows-up-attacks-countered-by-rebel">Spain follows up attacks, countered by rebel</h5>
+<p>Almost 40,000 fresh Spanish troops were sent to central Cuba and, although ==Gómez’s== forces were outnumbered by about ten to one, they fought determinedly.</p>
+<p>Using ==guerrilla tactics==, they not only <strong>eluded Weyler’s main forces</strong> for some time, but <strong>carried out surprise attacks on Spanish columns</strong>, which inflicted heavy losses.</p>
+<p>-&gt; As a result, by May 1897, <strong>Weyler’s offensive had lost its momentum</strong>. Nonetheless — despite some victories by ==<strong>Calixto García</strong>== — the <strong>Liberation Army seemed unable to launch a new offensive</strong>.</p>
+</section>
+</section>
+<section id="spain-reaction" class="level4">
+<h4 class="anchored" data-anchor-id="spain-reaction">Spain reaction</h4>
+<p>The Second Independence War had been <strong>extremely costly for Spain</strong> — more than 200,000 troops had been sent to Cuba since 1895.</p>
+<p>Since August 1896, Spain had also faced <strong>another rebellion in the Philippines</strong>. -&gt; With so many troops tied up in Cuba, Spain had been forced to <strong>open negotiations with the rebels in the Philippines</strong> and reach a compromise.</p>
+<section id="spain-ends-the-war-granted-dominion-status" class="level5">
+<h5 class="anchored" data-anchor-id="spain-ends-the-war-granted-dominion-status">Spain ends the war, granted dominion status</h5>
+<p>In June 1897, a more liberal government came to power in Spain that <strong>decided to end hostilities against the Cuban rebels</strong>. Spain then granted dominion status (a form of ==home rule==) to Cuba, and a ‘home rule’ government — under ==<strong>José María Gálvez</strong>==, an Autonomist leader from the 1870s — was allowed to come to power in Cuba.</p>
+</section>
+<section id="refuse-negotiation-continue-fighting" class="level5">
+<h5 class="anchored" data-anchor-id="refuse-negotiation-continue-fighting">Refuse negotiation, continue fighting</h5>
+<p>==<strong>Gómez</strong>== — who knew that the ‘home rulers’ were a relatively small group — <strong>rejected the reforms and all offers of negotiations with Spain</strong>. The fighting thus continued, with the rebels determined to achieve complete independence from Spain. It seemed to many that the rebels would soon achieve this.</p>
+
+
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

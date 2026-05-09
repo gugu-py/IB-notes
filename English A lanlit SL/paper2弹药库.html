@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>paper2弹药库 – notes</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<p>==+++setting analysis (although combo is present)== ++child</p>
+<p>underline the texts’ title</p>
+<p><em>Human Acts</em> by Han Kang provided a polyphonic view on authoritarian oppression and collective resistance, centered around the boy Dong Ho.</p>
+<p><em>Palestine</em> is a <strong>visual novel</strong> by Joe Sacco. It offered a journalistic perspective on the Israeli–Palestinian conflict through the medium of comics.</p>
+<section id="common-device-and-themes-overview" class="level2">
+<h2 class="anchored" data-anchor-id="common-device-and-themes-overview">Common Device and Themes Overview</h2>
+<p>%%</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 25%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Prepare at least one example for each</strong></th>
+<th><em>Human Act</em></th>
+<th><em>Palestine</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Characterization</strong></td>
+<td>1. Dong-ho<br>2. <strong>Inner voice</strong></td>
+<td>1. Palestine individualized through testimony<br>2. Inner voice</td>
+</tr>
+<tr class="even">
+<td><strong>Scene Construction</strong></td>
+<td></td>
+<td>space contrast (watch tower, small hole)</td>
+</tr>
+<tr class="odd">
+<td><strong>Structural Features</strong></td>
+<td>Meta-Fiction (The Writer Character)</td>
+<td>Meta-Fiction (The Journalist Character)</td>
+</tr>
+<tr class="even">
+<td><strong>Language Techniques</strong></td>
+<td>1. <strong>Symbolism/motif</strong><br>2. Imagery</td>
+<td>1. Symbolism/motif<br>2. Imagery</td>
+</tr>
+<tr class="odd">
+<td><strong>Narrative Strategies</strong></td>
+<td><strong>Polyphonic Structure</strong></td>
+<td>Polyphonic Structure</td>
+</tr>
+</tbody>
+</table>
+<p>%%</p>
+<p>common themes:</p>
+<p>oppression (systemic), resolution, trauma, family</p>
+<p>effort to remember (memory recall)</p>
+<p>intergeneration trauma</p>
+<p>duality (vulnerability/mortal vs life’s strength)</p>
+<p>mother (family)</p>
+<p>polyphonic view and Deluze</p>
+<hr>
+<p>retelling story and bearing witness</p>
+<p>intergeneration trauma</p>
+<p>duality (indifference; charity); memory indurance vs life mortal</p>
+<p>mother (family)</p>
+<hr>
+<p>打开思路：relationships不一定是人类，e.g.&nbsp;life and death</p>
+<p>每一个子quote也要记得有扣题的sentence</p>
+<p>每一个quote记得要有context</p>
+<p>device技巧分析可以增加（相比于theme analysis）</p>
+<p>高级/大词汇使用时要小心，写出具体的意思保留specificity，从quote出发</p>
+</section>
+<section id="human-acts" class="level2">
+<h2 class="anchored" data-anchor-id="human-acts">Human Acts</h2>
+<section id="oppression" class="level3">
+<h3 class="anchored" data-anchor-id="oppression">Oppression</h3>
+<section id="individual" class="level4">
+<h4 class="anchored" data-anchor-id="individual">Individual</h4>
+<p>Prisoner</p>
+<blockquote class="blockquote">
+<p>It was just about bearable, at first. But <strong>having that pen jammed into the exact same place every day soon rubbed the flesh raw, and a mess of blood and watery discharge oozed from the wound. Later on it got bad enough that you could actually see the bone, a gleam of white amid the filth.</strong> They gave me some cotton wool soaked in alcohol to press against it, but only then, only once the bone was showing through.</p>
+</blockquote>
+<p>The use of ==vivid imagery and realistic diction== demonstrates the memory of torture from the prisoner. “Mess of blood” and “watery discharge” are direct tactile and visual imagery, as the consequence of the “pen jamming”. The audience are able to imagine the strong suffering from the sensory details, as the <strong>pain took a concrete form via clinical symptom</strong>, a vivid mark of societal oppression on individual’s body.</p>
+<p>Furthermore, the ==vivid detail of the exposed bone==, “white amid the filth”, created high contrast between color white and red. This sharp contrast suggested how the authoritarian society <strong>dehumanized political prisoners into mere flesh and bone</strong>, inflicting horror to the audience. This further demonstrated the societal control over individual, powered by fear and torture.</p>
+<blockquote class="blockquote">
+<p><strong>My body was no longer my own.</strong> That my life had been taken entirely out of my hands, and <strong>the only thing I was permitted to do now was to experience pain</strong>. Pain so intense I felt sure I was going to lose my mind, so horrific that I literally did lose control of my body, pissing and shitting myself.</p>
+</blockquote>
+<p>“My body was no longer my own.” is ==declarative==, showing the society took away individual’s autonomy, even over his own body. This directly shows how individual’s body is disassociated from their emotion and spirit as a <strong>loss of self-agency</strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. The repetition of this sentence further reinforces the idea that societal oppression completely deprives them of their power and control of themselves.</p>
+<p>The word ==“pain” was repeated== to emphasize the suffering. It shows societal oppression brutally strips away people’s basic rights to have other feelings other than pain.</p>
+<p>The fact that individual’s pain needs to be permitted and authorized directly points to the <strong>irrational control from the power and loss of autonomy for individuals</strong>, thus creating a desparing tone and appealing to the readers’ sympathy.</p>
+<p>%% “Pain as the only thing permitted” indicated pain was normalized, and “permitted” further demonstrated society’s control over one’s existence. %%</p>
+<p>The ==unfiltered language== of “pissing and shitting myself” implies <strong>loss of dignity</strong> as the result of societal oppression. Therefore, not only individual’s autonomy over his own body was reduced, but also the existence and dignity were restructured to serve the authoritarian power.</p>
+<blockquote class="blockquote">
+<p>him, they beat until he lost consciousness and went as limp as a rag doll.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“Hairpin torture,” where both arms were tied behind the back and a large piece of wood inserted between the bound wrists and the small of the back; waterboarding; electric torture; the method known as the “roast chicken,” which involved trussing the victim with ropes and suspending them from the ceiling, where they were then beaten while being spun around.</p>
+</blockquote>
+<p>listing of all the torture methods -&gt; traumatized memory and inflict terror in audience</p>
+<blockquote class="blockquote">
+<p><em>We will prove to you that you are nothing but filthy stinking bodies. That you are no better than the carcasses of starving animals.</em></p>
+</blockquote>
+</section>
+<section id="family" class="level4">
+<h4 class="anchored" data-anchor-id="family">Family</h4>
+<p>(The Mother)</p>
+<blockquote class="blockquote">
+<p>I buried you with my own two hands. Removed your PE jacket and your sky-blue tracksuit bottoms, and dressed you in your dark winter uniform, over a white shirt. Tightened your belt just so and put clean gray socks on you. When they put you in a plywood coffin and loaded it up onto the rubbish truck, I said I’d ride at the front to watch over you. I didn’t have a clue where the truck was heading. I was too busy staring back to the rear, to where you were.</p>
+</blockquote>
+<p>PE jacket and sky-blue tracksuit are ==symbol of innocense and vitality==. Having a dead boy wearing those created a strong shocked emotional impact on the readers, as the innocense and vitality symbolized by the clothes contrasted sharply with the corpse’s staticness and grief.</p>
+<p>The way the author described mother changing clothes for her boy usually was when the child departs for school. This routine again ==contrasted== with the fact that the mother was actually burying him, to the world of death. This ==parallelism== showed that mother-son relationship was so strong that death cannot break.</p>
+<p>The ==sightline== from the mother to her son became the only thing she could cling to their relationship, reflecting the deperation of permanently losing her son. These sharp contrast and symbolism thus illustrated how the authoritarian oppression in family relationship and family’s resistance externalized via grief.</p>
+<blockquote class="blockquote">
+<p>The thread of life is as tough as an ox tendon, so even after I lost you, it had to go on. I had to make myself eat, make myself work, forcing down each day like a mouthful of cold rice, even if it stuck in my throat.</p>
+</blockquote>
+<p>The ==metaphor== “thread” displays the lack of freedom and frigility of people’s lives as the result of the societal’s oppression. However, it is in contrast with the simile “an ox tendon”, which reveals the hidden strength and resiliance of individuals under harsh circumstances.</p>
+<p>%% Metaphor of life as thread and ox tendon showcased the resiliance of individual. However, contrasted with the grief of the son’s death, this metaphor implies the duality of life, where the emotional vulnerability and resiliance coexist. %%</p>
+<blockquote class="blockquote">
+<p>The day had hardly got started when the bastard really did show up. Our opportunity had come, to hurl slogans like stones with one voice, and all hell broke loose. We went into a frenzy of howling and fainting, tugging at our hair and tearing at our clothes. (人物变化，从quiet到aggresive, protesting)</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>I jumped down, dashed over to the desk opposite, and scrambled up before anyone had time to blink, the hem of my white skirt fluttering at my ankles. There was a photo of the murderer hanging on the wall—I pulled it down and smashed the glass with my foot. Something splattered across my face—tears, or maybe blood.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>You disliked the shadowed places where the trees blocked out the sun. When I wanted to walk there to escape the heat, you tugged me by the wrist as hard as you could, back to where it was bright. Even though your fine hair sparkled with sweat, and you were panting so hard you sounded as if you were in pain. Let’s walk over there, Mum, where it’s sunny, we might as well, right? Pretending that you were too strong for me, I let you pull me along. It’s sunny over there, Mum, and there’s lots of flowers, too. Why are we walking in the dark, let’s go over there, where the flowers are blooming.</p>
+</blockquote>
+</section>
+<section id="world" class="level4">
+<h4 class="anchored" data-anchor-id="world">World</h4>
+<blockquote class="blockquote">
+<p>Those hundreds of people in their dark clothes looked like ants carrying coffins up the sandy mound. (The Mother)</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>It happened in Gwangju just as it did on Jeju Island, in Kwantung and Nanjing, in Bosnia, and all across the American continent when it was still known as the New World, with such a uniform brutality it’s as though it is imprinted in our genetic code.</p>
+</blockquote>
+</section>
+<section id="child" class="level4">
+<h4 class="anchored" data-anchor-id="child">Child</h4>
+<blockquote class="blockquote">
+<p>Because he is still so small, the clothes don’t fit him, hanging off his body “like a sack.”-&gt; <strong>Naivety</strong></p>
+</blockquote>
+<section id="trackpants" class="level5">
+<h5 class="anchored" data-anchor-id="trackpants">Trackpants</h5>
+<ul>
+<li>normal, playful, childhood (and of their physical vulnerability), naivety and vitality -&gt; inhumanity of Dong-ho’s death</li>
+<li>inspiration and ignite the survived</li>
+</ul>
+<p>everyone from Dong-ho’s mother to the writer herself pictures the beloved boy in his oversized trackpants -&gt; an image that speaks to the adolescent phase Dong-ho was in when his life was taken</p>
+<p>In <em>Human Acts</em>, the trackpants that Dong-ho and Jeong-dae wear ==symbolize the youthful innocence== that was destroyed during the Gwangju massacre. Even for middle schoolers, both Dong-ho and Jeong-dae are small for their age, meaning the exercise suits they wear as gym uniforms hang off them. But these oversized trackpants, initially <strong>representative of these boys’ normal, playful, childhood (and of their physical vulnerability)</strong> take on new meaning after the 5:18 crackdown. When soldiers shoot down Jeong-dae during a protest, Dong-ho can only identify his friend’s corpse by its pair of “light blue tracksuit bottoms, identical to [his] own.” Later, after Dong-ho has been similarly murdered, everyone from Dong-ho’s mother to the writer herself pictures the beloved boy in his oversized trackpants, an image that speaks to the adolescent phase Dong-ho was in when his life was taken. Yet if the recurring <strong>symbolism of trackpants symbolizes the tragedy of youth cut short, it also provides a sense of strength and continuity to those who outlive Dong-ho</strong>. When the writer gets caught in a snowbank, she pictures Dong-ho in his trackpants and finds herself newly able to withstand the cold. And when Eun-sook sees a young male actor wearing a tracksuit, the memories of Dong-ho embolden her: “scalding tears burn from [her] eyes” at the sight, “but she does not look away.” In other words, trackpants represent the inhumanity of Dong-ho and Jeong-dae’s murders, but they also represent the way the boys’ memories ignite and inspire those that survived them.</p>
+</section>
+<section id="other" class="level5">
+<h5 class="anchored" data-anchor-id="other">Other</h5>
+<blockquote class="blockquote">
+<p>(gunfire was heard from Provincial Office) She could have pressed her hands over her ears, could have screwed her eyes tight shut, shook her head from side to side or moaned in distress. Instead, she simply remembered you, Dong-ho. <strong>How you darted away at the stairs when she tried to take you home. Your face frozen with terror, as though escaping this importunate plea was your only hope of survival. <em>Let’s go together, Dong-ho. We ought to leave together, right away.</em> You stood there clinging to the second-floor railing, trembling. When she caught your gaze, Eun-sook saw your eyelids quiver. Because you were afraid. Because you wanted to live.</strong> (Eun-sook perspective, the editor)</p>
+</blockquote>
+<p>the terror: “trembling”, “face frozen with terror”, “clinging”, “eyelids quiver”</p>
+<p>second person “you”: draw sympathy from reader, poignant心酸</p>
+<p>“wanted to live” but unsure of the decision: a child not able to make decision of death, which is out of his capacity to understand -&gt; unique tragedy that haunts Eun-sook forever</p>
+<blockquote class="blockquote">
+<p>Kids crouching beneath the windows, fumbling with their guns and complaining that they were hungry, asking if it was OK for them to quickly run back and fetch the sponge cake and Fanta they’d left in the conference room; (prisoner chapter)</p>
+</blockquote>
+<p>“fumbling”: not know how to use a gun, naivety</p>
+<p>“complaining hungry”, fetch “sponge cake and Fanta”: sweet treat shows: - unsophisticated taste of boys, symbolized as their naivety via childish desire for candy strong even in a moment of crisis. - routine life was interrupted</p>
+<p>==children get tortured or killed==</p>
+</section>
+</section>
+</section>
+<section id="trauma" class="level3">
+<h3 class="anchored" data-anchor-id="trauma">Trauma</h3>
+<p>Prisoner</p>
+<blockquote class="blockquote">
+<p>I remember the constant terror of thinking I might accidentally fall asleep. The terror of having a cigarette stubbed out on my eyelid, so vivid I could practically smell the singed flesh.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>As we each inquired how the other had been, something like transparent feelers reached tentatively out from our eyes, confirming the shadows held by the other’s face, the track marks of suffering that no amount of forced jollity could paper over. Neither of us had managed to go back to university, and we were both still living at home, a burden to our families.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>The interrogation room of that summer was knitted into our muscle memory, lodged inside our bodies. With that black Monami Biro. That pale gleam of exposed bone. That familiar, broken cadence of whimpered, desperate pleas.</p>
+</blockquote>
+</section>
+<section id="soul" class="level3">
+<h3 class="anchored" data-anchor-id="soul">Soul</h3>
+<blockquote class="blockquote">
+<p>Before, we used to have a kind of glass that couldn’t be broken. A truth so hard and clear it might as well have been made of glass. So when you think about it, it was only when we were shattered that we proved we had souls. That what we really were was humans made of glass.</p>
+</blockquote>
+</section>
+</section>
+<section id="palestine" class="level2">
+<h2 class="anchored" data-anchor-id="palestine">Palestine</h2>
+<p>https://www.ebsco.com/research-starters/literature-and-writing/palestine-graphic-novel</p>
+<section id="oppression-1" class="level3">
+<h3 class="anchored" data-anchor-id="oppression-1">Oppression</h3>
+<section id="individual-1" class="level4">
+<h4 class="anchored" data-anchor-id="individual-1">Individual</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 67%">
+<col style="width: 32%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>![[_resources/Pasted image 20260225102705.png]]</td>
+<td>diction/lexical cluster</td>
+</tr>
+</tbody>
+</table>
+<p>gutters are black (different from white) and get smaller to show -&gt; constant suffocation and recurrent sensory deprivation</p>
+<p>Sacco applied panels with ==uniform size and black straight gutters== to create a sense of conformity, suggesting the oppression and violence were normalized and seemed to go on forever.</p>
+<p>The ==limited negative space and its uniform grey hue== in each panel implied the extreme suffocation and desperation.</p>
+<p>The hallucination of seeing family member’s death indicated that the oppression over individual was mental. ==Repetition== of the word “dead” created a semantic field, where the ultimate fear of death was normalized and externalized by hullicination. It is unflucntuating and numb tone in the repetition of “dead” that directly contributes to the fact of death normalization.</p>
+<p>In addition, refusal to reduce loosen the bonds despite the advice from the doctor indicated the deliberate torture and systematic dehumanization. Therefore, through these devices, the author used the sense of desperation to illustrate the relationship between individual and society as oppressive and destructive.</p>
+<p>%% pathos, a sense of extreme desperation %%</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 69%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>p102</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>![[_resources/Pasted image 20260225103124.png]]</td>
+<td>bottom up perspective</td>
+</tr>
+</tbody>
+</table>
+<p>The bottom-up angle to show the policemen depicted their undeniable authority against individual. This contrasts sharply with the top-down angle to depict the prisoner, implying helplessness.</p>
+<p>also comment on the dark background (oppression, suffocation), facial expression (numb and expressionless, indicating their emotional detachment and indirectly reveal the traumatic and stressful environment where the prisoners are) –&gt; the group of interrogators represents the entire government regime</p>
+</section>
+<section id="family-1" class="level4">
+<h4 class="anchored" data-anchor-id="family-1">Family</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 70%">
+<col style="width: 20%">
+<col style="width: 4%">
+<col style="width: 4%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>![[_resources/Pasted image 20260225103713.png]]</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>![[_resources/Pasted image 20260225103730.png]]</td>
+<td>graphic weight</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>In <em>Palestine</em>, the oppression from ethnic society takes a more aggresive form. Through ==listing and parallelism== of the mother’s son, the author showed the deliberate destruction on family by the society was normalized.</p>
+<p>==Juxtaposition== was applied to show the oppresive society on families. The woman’s worrying face with ==frowning and emenata== indicated anxiousness and desperation, while the soldier’s ==gesture== of smoking and casual sitting suggested total indifference. This sharp contrast therefore implies the oppression was structural (shows power imbalance and extreme indifference), and families were vulnerable against the oppression.</p>
+<p>Overall, the removal of the home site reflects the systematic removal of families: both property and loved ones.</p>
+<p>Through ==heavy graphic weight==, the room environment was illustrated to be dark and hollow, suggesting the extreme lonliness created by family separation.</p>
+<p>numb and desperate (motionless face)</p>
+</section>
+<section id="child-1" class="level4">
+<h4 class="anchored" data-anchor-id="child-1">Child</h4>
+<p>p201 Firas</p>
+<p>![[_resources/Pasted image 20260328230850.png|384]]</p>
+<p>“I was 13.” <strong>militarization</strong> of childhood, where innocence was replaced by ideology</p>
+<p>![[_resources/Pasted image 20260328230556.png|379]]</p>
+<p>child perspective: how the strong bullied the weak. throwing stone vs real bullet as repression. soldiers vs the wounded teenagers. -&gt; extreme power imbalance and thus systematic oppression</p>
+<p>![[_resources/Pasted image 20260328230612.png|383]]</p>
+<p>graphic weight</p>
+<p>five men vs one child + well-equipped (guns and smoke bombs) vs naked -&gt; extreme power imbalance and the child’s powerlessness</p>
+<p>incomplete body as subject in panel’s frame</p>
+<p>“when they saw clutching arm, they kicked” -&gt; deliberate torture</p>
+<p>angle from the soldier’s back: indifference</p>
+<p>![[_resources/Pasted image 20260328230333.png|380]]</p>
+</section>
+</section>
+</section>
+<section id="common-combos" class="level2">
+<h2 class="anchored" data-anchor-id="common-combos">common Combos</h2>
+<section id="trigger-words" class="level4">
+<h4 class="anchored" data-anchor-id="trigger-words">Trigger words</h4>
+<p>oppression, power, control, societal pressure, resistance</p>
+<p>violence,</p>
+<p>trauma</p>
+</section>
+<section id="use-of-setting" class="level3">
+<h3 class="anchored" data-anchor-id="use-of-setting">Use of Setting</h3>
+<p>Similarly using motifs to create a suffocating setting in both works, both authors depict how the oppression from power impacts the weak through environmental details. However, the oppression in both books are manifested in different forms, authoritarian oppression whose impact lasts over time after the termination of events in the Human Act, in contrast with in Palestine, ethnic oppression that embodies significant intensity while and traumatic events are still on-going.</p>
+<section id="specs" class="level4">
+<h4 class="anchored" data-anchor-id="specs">specs</h4>
+<p><strong>Human Act</strong> - long-lasting trauma (individuals experience as a result of authoritarianism)</p>
+<blockquote class="blockquote">
+<p>Dripping water sound as motif</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>The streetlights lining the road that branches off to the funeral hall and the emergency department, the main building and the annex, all switch themselves off at exactly the same time. As you walk along the straight white line that follows the center of the road, you raise your head to the falling rain.</p>
+</blockquote>
+<p><strong>Palestine</strong> - the haunting nature of influence of oppression Gaza/settlement cloudy weather, rainy -&gt; pathetic fallacy, persistence of oppression Muddy ground (contrast with Jerusalem) Watchtower, : constant surveillance and oppression</p>
+</section>
+</section>
+<section id="oppression-in-general" class="level3">
+<h3 class="anchored" data-anchor-id="oppression-in-general">Oppression in general</h3>
+<p>Both: societal oppression</p>
+<p>Difference in timespan: - Human Act: short time, terminate after over - Palestine: continuous, face future dilema</p>
+</section>
+<section id="oppression-on-individual-prisoner" class="level3">
+<h3 class="anchored" data-anchor-id="oppression-on-individual-prisoner">Oppression on Individual (prisoner)</h3>
+<p>both: body as site of power, loss control of body+body torture=bipolitical control to eliminate identity; ==visceral==</p>
+<p>difference: - Human Act: fragmented recalling narrative with some pause in time to show impression (moment of exposed bone, moment of thoughts) -&gt; long lasting trauma - Palestine: linear narrative to realistically show torture over time (not allow to sleep, time elapse with panels) -&gt; continuous oppression and uncertainty</p>
+</section>
+<section id="oppression-on-family-mother-son" class="level3">
+<h3 class="anchored" data-anchor-id="oppression-on-family-mother-son">Oppression on Family (mother-son)</h3>
+<p>both: - maternal grief under structural oppression - mother with no names: - universal - loss of identity due to oppression - stress the importance of mother-son bond and the consequence of losing son -&gt; readers empathize</p>
+<p>difference in theme focus: - Human Act: Ambiguous Loss: physically lost, but mentally still present - Palestine: Stolen Future (realistic &amp; symbolic), lost of hope and continuity of uncertainty</p>
+<p>difference in authorial choices: - Human Act: personal tone, more subtle and internal focus (first person, sightline, inner voice) - Palestine: journalistic tone, externalized focus (gesture, environment, language)</p>
+</section>
+<section id="on-child" class="level3">
+<h3 class="anchored" data-anchor-id="on-child">on child</h3>
+<p>%% Palestine: boy in the rain</p>
+<p>Human Act: Dong Ho shot in the head - Children became brave protesters - yet their naivety was emphasized %%</p>
+<p>both: power imbalance and children make decision outside their capacity</p>
+<p>difference in authorial choices: - Human Act: symbolism to directly show naivety (Fanta and Sponge Cake) - Palestine: use contrast to show the naivety and vulnerability (child vs soldier); focus more on soldier’s strength</p>
+<p>difference in theme: - Human Act: the immature of their mind - Palestine: immature of body</p>
+<hr>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>自我主体性的丧失<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>small-tips – notes</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="number-algebra" class="level2">
+<h2 class="anchored" data-anchor-id="number-algebra">Number &amp; Algebra</h2>
+<p>![[RV prac/Maths/_resources/Pasted image 20240827154321.png]]</p>
+<p>For this kind of task, you only need to represent things(sum, a certain term, etc.) using <code>r</code>(common ratio). Then solve the equation of <code>r</code>.</p>
+<hr>
+<p>![[RV prac/Maths/_resources/Pasted image 20240831093509.png]]</p>
+<p>It is <code>after n years</code>, not <code>the n-th year</code>. In that way, the formula should be <span class="math inline">\(x^n\)</span>, not <span class="math inline">\(x^{n-1}\)</span>.</p>
+<hr>
+<p>![[RV prac/Maths/_resources/Pasted image 20240920141504.png]]</p>
+<p><span class="math inline">\(log\)</span> or <span class="math inline">\(ln\)</span> on both side to get the indices.</p>
+</section>
+<section id="trig" class="level2">
+<h2 class="anchored" data-anchor-id="trig">Trig</h2>
+<p>for <span class="math inline">\(a \times sin(x)+b \times cos(x)\)</span> to be written as <span class="math inline">\(R \times sin(x+c)\)</span>, <span class="math inline">\(R\)</span> can be found by <span class="math inline">\(\sqrt{a^2+b^2}\)</span></p>
+<section id="an-example-for-solving-arctan-related-equation" class="level3">
+<h3 class="anchored" data-anchor-id="an-example-for-solving-arctan-related-equation">An example for solving <span class="math inline">\(arctan\)</span> related equation</h3>
+<p>The equation given involves an expression of the form <span class="math display">\[\tan(\arcsin x).\]</span> In order to solve for <span class="math inline">\(x\)</span>, one of the key steps shown in the solution is to rewrite <span class="math display">\[\tan(\arcsin x)\]</span> as <span class="math display">\[\frac{\sin(\arcsin x)}{\cos(\arcsin x)}.\]</span> From there, we use <span class="math inline">\(\sin(\arcsin x) = x\)</span> and <span class="math inline">\(\cos(\arcsin x) = \pm \sqrt{1 - x^2}\)</span> to express everything purely in terms of <span class="math inline">\(x\)</span>. This approach makes it straightforward to isolate <span class="math inline">\(x\)</span> and solve the resulting algebraic equation.</p>
+<hr>
+<p><strong>Why We Write <span class="math inline">\(\tan(\arcsin x)\)</span> as <span class="math inline">\(\frac{\sin(\arcsin x)}{\cos(\arcsin x)}\)</span> Instead of Using <span class="math inline">\(\arctan\)</span> Directly</strong></p>
+<ol type="1">
+<li><p><strong>Directly Relating to <span class="math inline">\(x\)</span></strong></p>
+<ul>
+<li>By definition, <span class="math inline">\(\arcsin x\)</span> is the angle <span class="math inline">\(\theta\)</span> in the range <span class="math inline">\(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\)</span> for which <span class="math inline">\(\sin \theta = x\)</span>.</li>
+<li>Hence, <span class="math inline">\(\sin(\arcsin x) = x\)</span> and <span class="math inline">\(\cos(\arcsin x) = \pm \sqrt{1 - x^2}\)</span>.</li>
+<li>Rewriting <span class="math display">\[\tan(\arcsin x) = \frac{\sin(\arcsin x)}{\cos(\arcsin x)}\]</span> gives an expression directly in terms of <span class="math inline">\(x\)</span>. This makes the equation purely algebraic in <span class="math inline">\(x\)</span>, which is much more straightforward to solve.</li>
+</ul></li>
+<li><p><strong>Avoiding Domain/Range Complications</strong></p>
+<ul>
+<li>If we tried to “apply <span class="math inline">\(\arctan\)</span>” on both sides or use an identity like <span class="math inline">\(\arctan(\tan(\arcsin x))\)</span>, we would run into potential domain-range issues.</li>
+<li><span class="math inline">\(\arcsin x\)</span> takes values in <span class="math inline">\(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\)</span>, while <span class="math inline">\(\arctan\)</span> has its own principal range <span class="math inline">\(\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)\)</span>. Even though these intervals overlap, confusion can arise if one tries to cancel <span class="math inline">\(\arctan\)</span> and <span class="math inline">\(\tan\)</span> without carefully tracking signs and quadrants.</li>
+<li>Writing <span class="math display">\[\tan(\arcsin x) = \frac{x}{\sqrt{1 - x^2}}\]</span> sidesteps these complications by keeping the equation entirely in real-algebraic form.</li>
+</ul></li>
+<li><p><strong>Clear Path to an Algebraic Equation</strong></p>
+<ul>
+<li>Once <span class="math display">\[\tan(\arcsin x) = \frac{x}{\sqrt{1 - x^2}},\]</span> the rest of the steps (isolating <span class="math inline">\(x\)</span>, squaring, etc.) become a straightforward exercise in algebra.</li>
+<li>This method also allows us to keep track of the necessary domain restrictions (like <span class="math inline">\(|x|\le 1\)</span> from the definition of <span class="math inline">\(\arcsin\)</span>, and sign choices for <span class="math inline">\(\cos(\arcsin x)\)</span>).</li>
+</ul></li>
+</ol>
+<p>In short, rewriting <span class="math display">\[\tan(\arcsin x)\]</span> in terms of sine and cosine (and then in terms of <span class="math inline">\(x\)</span>) is the cleanest, most direct way to solve the equation without running into tricky domain/range problems that arise from trying to apply inverse functions in the wrong order.</p>
+</section>
+</section>
+<section id="calculus" class="level2">
+<h2 class="anchored" data-anchor-id="calculus">Calculus</h2>
+<p>条件洞察：know what information and situation is provided, especially when only one integral and differentiation is provided 符号抽象</p>
+<p>concave-up: <span class="math inline">\(f''(x)&gt;0\)</span> concave-down: <span class="math inline">\(f''(x)&lt;0\)</span></p>
+<section id="易错" class="level3">
+<h3 class="anchored" data-anchor-id="易错">易错</h3>
+<p>积分内的系数不要忘记: <span class="math inline">\(\int a \times f(x) dx\)</span> 不要看错带指数的括号：<span class="math inline">\((2x)^3 \ne 2x^3\)</span> M series的公式divide by factorio 不要忘记</p>
+</section>
+<section id="integration" class="level3">
+<h3 class="anchored" data-anchor-id="integration">Integration</h3>
+<p>reverse chain rule</p>
+<p><span class="math display">\[
+\int f'(x)g'(f(x)) dx = g(f(x))+c
+\]</span></p>
+</section>
+<section id="m-series" class="level3">
+<h3 class="anchored" data-anchor-id="m-series">M series</h3>
+<blockquote class="blockquote">
+<p>Just expand. If composite function, expand outer layer, then expand inner layer. When see function capable of transformation, use transformation first, and then expand.</p>
+</blockquote>
+<p>![[_resources/Pasted image 20250917230101.png]]</p>
+<p>use <span class="math inline">\(\frac{\text{M series}}{x^3}\)</span>, see it is undetermined form. Use L’Hopital. Ignore all other terms except the one with the same power as <span class="math inline">\(x^3\)</span>, apply L’Hopital rule 指数 times, you get result very fast</p>
+<p>![[_resources/Pasted image 20250924151732.png]]</p>
+<p>Brutal Force, first expand the <span class="math inline">\(\cos(...)\)</span>, make <span class="math inline">\(\ln(1+x)\)</span> as <span class="math inline">\(x\)</span>, and then expand the <span class="math inline">\(\ln(1+x)\)</span> term into M series, then expand. Fuck.</p>
+</section>
+<section id="inverse-trig-integration" class="level3">
+<h3 class="anchored" data-anchor-id="inverse-trig-integration">Inverse Trig Integration</h3>
+<p>![[_resources/Pasted image 20250922000630.png]]</p>
+<p>enhance this flow and read <a href="https://www.revisionvillage.com/ib-math/analysis-and-approaches-hl/boot-camps/calculus/integration/mixed-quotients/">method</a> again</p>
+</section>
+</section>
+<section id="complex-number" class="level2">
+<h2 class="anchored" data-anchor-id="complex-number">Complex Number</h2>
+<p><span class="math display">\[
+z_1=r_1cis(\theta_1)
+\]</span></p>
+<p><span class="math display">\[
+z_1z_2=r_1r_2\times cis(\theta_1+\theta_2)
+\]</span></p>
+<p><span class="math display">\[
+\frac{z_1}{z_2}=\frac{r_1}{r_2} \times cis(\theta_1-\theta_2)
+\]</span></p>
+<p><span class="math display">\[
+cis(\theta_1)\times cis(\theta_2)=cis(\theta_1+\theta_2)
+\]</span> if the equation has complex number as 系数, then the complex solutions do not come in conjugate pairs</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
