@@ -22,7 +22,14 @@ For context: my predicted grade is 41/42.
 
 4. use Obsidian to open those markdown files for best experience (some note contains Obsidian styled links)
 
-**use of AI**: Usage of AI is acknowledged, but I can say I verified them all and most of the note are pure human (except some history note). Some prompts are shared.
+**use of AI**: Usage of AI is acknowledged, but I can say I verified them all and most of the note are pure human (except some history note are by AI). Some prompts are shared. You can use AI to help yourself to digest my notes.
+
+other notes on notes:
+
+1. most confident notes are lanlit paper 1, paper 2, and samples
+
+2. CS notes are for the old syllubus
+
 
 ---
 
@@ -70,3 +77,7 @@ If you improve something, extend it, or reorganize it in a better way, that is e
 > TODO: to be updated
 
 Thanks Kara 27' for scanning Chinese paper samples.
+
+Thanks Shaun 27' for advice on accessibility and adoption.
+
+Using Quarto, Github Action, and Github Pages for static website hosting.
