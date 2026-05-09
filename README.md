@@ -6,25 +6,15 @@ Dear Friends:
 
 These are my personal IB study notes, shared openly.
 
-The motive is simple. I just do not like knowledge after pay wall in any sense.
+The motive is simple. I just do not like knowledge after paywall in any sense.
 
 If this helps you study faster, understand better, or build your own system of notes, it has done its job.
 
 For context: my predicted grade is 41/42.
 
-**usage**:
-
-1. download: click on `Code` button and click on `Download as Zip`.
-
-2. root directory is a list of my selected courses
-
-3. inside each course directory: notes broken into units or paper type; `notes on class` (fragmented notes taken on class)
-
-4. use Obsidian to open those markdown files for best experience (some note contains Obsidian styled links)
-
 **use of AI**: Usage of AI is acknowledged, but I can say I verified them all and most of the note are pure human (except some history note are by AI). Some prompts are shared. You can use AI to help yourself to digest my notes.
 
-other notes on notes:
+**other notes on notes**:
 
 1. most confident notes are lanlit paper 1, paper 2, and samples
 
