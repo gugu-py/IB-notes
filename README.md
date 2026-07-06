@@ -1,5 +1,3 @@
-> still uploading. if missing notes, wait for a few days.
-
 # Gugu's IB Notes (a slice of my life in highschool)
 
 Dear Friends:
@@ -64,10 +62,8 @@ If you improve something, extend it, or reorganize it in a better way, that is e
 
 ## Acknowledgement
 
-> TODO: to be updated
+Those days with you were a miracle.
 
-Thanks Kara 27' for scanning Chinese paper samples.
-
-Thanks Shaun 27' for advice on accessibility and adoption.
+Thanks my friends for scanning paper samples, for advice on accessibility and adoption, and for their accompany during the hardest time, and for sharing burden and joy.
 
 Using Quarto, Github Action, and Github Pages for static website hosting.
