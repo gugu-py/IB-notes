@@ -2846,35 +2846,35 @@
     "href": "README.html",
     "title": "Gugu’s IB Notes (a slice of my life in highschool)",
     "section": "",
-    "text": "still uploading. if missing notes, wait for a few days."
+    "text": "Dear Friends:\nThese are my personal IB study notes, shared openly.\nThe motive is simple. I just do not like knowledge after paywall in any sense.\nIf this helps you study faster, understand better, or build your own system of notes, it has done its job.\nFor context: my predicted grade is 41/42.\nuse of AI: Usage of AI is acknowledged, but I can say I verified them all and most of the note are pure human (except some history note are by AI). Some prompts are shared. You can use AI to help yourself to digest my notes.\nother notes on notes:\n\nmost confident notes are lanlit paper 1, paper 2, and samples\nCS notes are for the old syllubus\n\n\n\n\nThis repository is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).\nYou are free to:\n\nShare — copy and redistribute the material\nAdapt — remix, transform, and build upon it\n\nUnder the following terms:\n\nAttribution — give appropriate credit\nShareAlike — distribute your contributions under the same license\n\nFull license text: https://creativecommons.org/licenses/by-sa/4.0/\n\n\n\n\nThese notes are personal study materials and are not official IB resources. Accuracy is not guaranteed.\nMost of the content is original. Some materials may be derived from textbooks or other educational sources. I do not claim ownership of third-party content.\nThird-party materials are not covered by the license above.\nIf you are a copyright holder and believe your work has been used inappropriately, please contact me and I will remove or revise the material.\n\n\n\n\nThis is not meant to be perfect or polished.\nIt is meant to be useful.\nIf you improve something, extend it, or reorganize it in a better way, that is exactly the point. Keep it open, keep it practical.\n\n\n\nThose days with you were a miracle.\nThanks my friends for scanning paper samples, for advice on accessibility and adoption, and for their accompany during the hardest time, and for sharing burden and joy.\nUsing Quarto, Github Action, and Github Pages for static website hosting."
   },
   {
     "objectID": "README.html#license",
     "href": "README.html#license",
     "title": "Gugu’s IB Notes (a slice of my life in highschool)",
-    "section": "License",
-    "text": "License\nThis repository is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).\nYou are free to:\n\nShare — copy and redistribute the material\nAdapt — remix, transform, and build upon it\n\nUnder the following terms:\n\nAttribution — give appropriate credit\nShareAlike — distribute your contributions under the same license\n\nFull license text: https://creativecommons.org/licenses/by-sa/4.0/"
+    "section": "",
+    "text": "This repository is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).\nYou are free to:\n\nShare — copy and redistribute the material\nAdapt — remix, transform, and build upon it\n\nUnder the following terms:\n\nAttribution — give appropriate credit\nShareAlike — distribute your contributions under the same license\n\nFull license text: https://creativecommons.org/licenses/by-sa/4.0/"
   },
   {
     "objectID": "README.html#disclaimer",
     "href": "README.html#disclaimer",
     "title": "Gugu’s IB Notes (a slice of my life in highschool)",
-    "section": "Disclaimer",
-    "text": "Disclaimer\nThese notes are personal study materials and are not official IB resources. Accuracy is not guaranteed.\nMost of the content is original. Some materials may be derived from textbooks or other educational sources. I do not claim ownership of third-party content.\nThird-party materials are not covered by the license above.\nIf you are a copyright holder and believe your work has been used inappropriately, please contact me and I will remove or revise the material."
+    "section": "",
+    "text": "These notes are personal study materials and are not official IB resources. Accuracy is not guaranteed.\nMost of the content is original. Some materials may be derived from textbooks or other educational sources. I do not claim ownership of third-party content.\nThird-party materials are not covered by the license above.\nIf you are a copyright holder and believe your work has been used inappropriately, please contact me and I will remove or revise the material."
   },
   {
     "objectID": "README.html#philosophy",
     "href": "README.html#philosophy",
     "title": "Gugu’s IB Notes (a slice of my life in highschool)",
-    "section": "Philosophy",
-    "text": "Philosophy\nThis is not meant to be perfect or polished.\nIt is meant to be useful.\nIf you improve something, extend it, or reorganize it in a better way, that is exactly the point. Keep it open, keep it practical."
+    "section": "",
+    "text": "This is not meant to be perfect or polished.\nIt is meant to be useful.\nIf you improve something, extend it, or reorganize it in a better way, that is exactly the point. Keep it open, keep it practical."
   },
   {
     "objectID": "README.html#acknowledgement",
     "href": "README.html#acknowledgement",
     "title": "Gugu’s IB Notes (a slice of my life in highschool)",
-    "section": "Acknowledgement",
-    "text": "Acknowledgement\n\nTODO: to be updated\n\nThanks Kara 27’ for scanning Chinese paper samples.\nThanks Shaun 27’ for advice on accessibility and adoption.\nUsing Quarto, Github Action, and Github Pages for static website hosting."
+    "section": "",
+    "text": "Those days with you were a miracle.\nThanks my friends for scanning paper samples, for advice on accessibility and adoption, and for their accompany during the hardest time, and for sharing burden and joy.\nUsing Quarto, Github Action, and Github Pages for static website hosting."
   },
   {
     "objectID": "Chinese A lanlit SL/notes and HW on class/0822语言.html",
